@@ -121,6 +121,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = '/home/rohitkr0036/publish/limbo/affiliate/static'
 STATICFILE_DIR = [
     STATIC_DIR
 ]
