@@ -1,0 +1,91 @@
+{% extends 'page/srch.html' %}
+{% block desc%}<meta name="description" content="Our Foremost motive is to serve you with correct product  review and price info. So, that this marketing arrangment can genearte you with honest purchases.">{% endblock desc%}
+{% load static %}
+{% load static%}
+{% block css%}<link rel="stylesheet" href="{% static 'pageCss/about.css'%}"> {% endblock css%}
+    {% block title%}about us: hipein.com{% endblock title%}
+    {% block content%}
+    <!-- about -->
+    <p class="head_about">About Us</p>
+    <hr>
+		<p class="p_about">Sometimes we are just confused which gadget would be suitable for us. But, due to the changes in the technology we can't able to decide So, don't worry the <span></span>  hipeIn is here to solve all your queries.
+
+	We will help you to find the best gadgets which would be suitable for you according to your preference. Here you can find the reviews of the gadgets and mobiles. We are here to hype-up your knowledge about the gadgets and the technology which were coming in the real world.</p>
+
+    <!--team-->
+    <h1 class="team-headline">Our Experts</h1>
+    <hr class=hr-team>
+    <p class="p-team"> The strength of the team is each individual member.
+      <br>
+      The strength of each member is the team.
+      <br> -Phil Jackson</p>
+
+
+    <div class="container">
+      <div class="row">
+          <div class="col-md-3 col-sm-6">
+              <div class="our-team">
+                  <div class="pic"><img src="{% static 'image/team/rohit-raj.jpg'%}" alt=""></div>
+                  <h3 class="title">Rohit Raj</h3>
+                  <span class="post">Web Developer</span>
+                  <ul class="icon">
+                      <li><a href="#" class="fab fa-facebook"></a></li>
+                      <li><a href="#" class="fab fa-instagram"></a></li>
+                      <li><a href="#" class="fab fa-twitter"></a></li>
+                      <li><a href="#" class="fab fa-linkedin-in"></a></li>
+                  </ul>
+              </div>
+          </div>
+
+          <div class="col-md-3 col-sm-6">
+              <div class="our-team">
+                  <div class="pic"><img src="{% static 'image/team/aman-acharya.jpg'%}" alt=""></div>
+                  <h3 class="title">Aman Acharya</h3>
+                  <span class="post">Web Designer</span>
+                  <ul class="icon">
+                      <li><a href="#" class="fab fa-facebook"></a></li>
+                      <li><a href="#" class="fab fa-instagram"></a></li>
+                      <li><a href="#" class="fab fa-twitter"></a></li>
+                      <li><a href="#" class="fab fa-linkedin-in"></a></li>
+                  </ul>
+              </div>
+          </div>
+
+          <div class="col-md-3 col-sm-6">
+            <div class="our-team">
+                <div class="pic"><img src="{% static 'image/team/sandeep-kumar.jpg'%}" alt=""></div>
+                <h3 class="title">Sandeep Kumar</h3>
+                <span class="post">Creative Designer</span>
+                <ul class="icon">
+                    <li><a href="#" class="fab fa-facebook"></a></li>
+                    <li><a href="#" class="fab fa-instagram"></a></li>
+                    <li><a href="#" class="fab fa-twitter"></a></li>
+                    <li><a href="#" class="fab fa-linkedin-in"></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+          <div class="our-team">
+              <div class="pic"><img src="{% static 'image/team/gulu.jpeg'%}" alt=""></div>
+              <h3 class="title">Gulshan Bhumij</h3>
+              <span class="post">Web Designer</span>
+              <ul class="icon">
+                  <li><a href="https://www.facebook.com/gulshan.bhumij/" class="fab fa-facebook"></a></li>
+                  <li><a href="https://www.instagram.com/gulu__gulshan/" class="fab fa-instagram"></a></li>
+                  <li><a href="" class="fab fa-twitter"></a></li>
+                  <li><a href="#" class="fab fa-linkedin-in"></a></li>
+              </ul>
+          </div>
+      </div>
+      </div>
+  </div>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $('.menu-toggle').click(function(){
+          $('.menu-toggle').toggleClass('active')
+          $('nav').toggleClass('active')
+        })
+      })
+      </script>
+  {% endblock content %}

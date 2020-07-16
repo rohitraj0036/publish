@@ -1,0 +1,41 @@
+{% extends 'page/basic.html' %}
+  {% load static %}
+   {% block css%} <link rel="stylesheet" href="{% static 'pageCss/music_pageCss.css' %}">{% endblock css%}
+    {% block title%}Music{% endblock title%}
+    {% block actmus%} class="active"{% endblock actmus%}
+    {% block content%}
+    <div class="sorry">
+      <h1 style="color:gray;"> Coming soon...</h1>
+
+    </div>
+    <style media="screen">
+      .sorry{
+        height: 500px;
+      }
+      .sorry h1{
+        position: absolute;
+        top:50%;
+        left: 40%;
+      }
+      @media (max-width: 1200px){
+        .sorry{
+          height: 950px;
+        }
+        .sorry h1{
+          position: absolute;
+          top:45%;
+          left: 37%;
+        }
+        @media (max-width: 768px){
+          .sorry{
+            height: 500px;
+          }
+          .sorry h1{
+            position: absolute;
+            top:40%;
+            left: 30%;
+          }
+        }
+      }
+    </style>
+    {% endblock content%}
