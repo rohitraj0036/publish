@@ -21,9 +21,8 @@
     <script src="https://kit.fontawesome.com/536f45e617.js" crossorigin="anonymous"></script>
 
     <title>{% block title%} {% endblock title%}</title>
-  </head>
-  <body>
-    <style media="screen">
+    {% block style %} {% endblock style%}
+    <style>
     .search_bar{
       width: 100%;
       display: flex;
@@ -84,52 +83,53 @@
 
 
     }
-      @media (max-width: 768px){
-        .menu-toggle{
-          display: block;
-          width: 40px;
-          height: 40px;
-          margin: 10px;
-          /* background: #ccc; */
-          float: right;
-          cursor: pointer;
-          text-align: center;
-          font-size: 30px;
-          color: #0984e3;
-        }
-        .menu-toggle:before{
-          content: '\f0c9';
-          font-family: fontAwesome;
-          line-height: 40px;
-        }
+    @media (max-width: 768px){
+      .menu-toggle{
+        display: block;
+        width: 40px;
+        height: 40px;
+        margin: 10px;
+        float: right;
+        cursor: pointer;
+        text-align: center;
+        font-size: 30px;
+        color: #0984e3;
+      }
+      .menu-toggle:before{
+        content: '\f0c9';
+        font-family: fontAwesome;
+        line-height: 40px;
+      }
         /* search_bar */
-        .alert{
-          display: none;
-        }
-        #srh{
-          width: 97%;
-          left: 10px;
-        }
-        #srh input{
-          width: 75%;
-        }
-        #srh button{
-          margin-left: 2px;
-        }
+      .alert{
+        display: none;
       }
-      @media (max-width: 640px){
-        #srh{
-          width: 100%;
-          margin-left: 5px;
-        }
-        #srh input{
-          width: 73%;
-        }
+      #srh{
+        width: 97%;
+        left: 10px;
       }
+      #srh input{
+        width: 75%;
+      }
+      #srh button{
+        margin-left: 2px;
+      }
+    }
+    @media (max-width: 640px){
+      #srh{
+        width: 100%;
+        margin-left: 5px;
+      }
+      #srh input{
+        width: 73%;
+      }
+    }
     </style>
+  </head>
+  <body>
     <header>
       <div class="logo">
-        <img class="logo-img" style="width: 250px; margin-left: -40px;"src="{% static 'image/logo/logo.png'%}" alt="">
+        <img class="logo-img" style="width: 250px; margin-left: -40px;" src="{% static 'image/logo/logo.png'%}" alt="">
       </div>
       <div class="menu-toggle"></div>
       <nav>
@@ -157,7 +157,7 @@
 
     <footer>
       <div class="footer_info">
-        <img style="width: 150px; margin-left: -13px;"src="{% static 'image/logo/logo.png'%}" alt="">
+        <img style="width: 150px; margin-left: -13px;" src="{% static 'image/logo/logo.png'%}" alt="">
         <p class="footer_about">Our Foremost motive is to serve you with correct product  review and price info. So, that this marketing arrangment can genearte you with honest purchases.</p>
         <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
         <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
@@ -183,7 +183,7 @@
       </div>
     </footer>
     <!-- script -->
-    <script type="text/javascript">
+    <script>
       $(document).ready(function() {
         $('.menu-toggle').click(function(){
           $('.menu-toggle').toggleClass('active')
