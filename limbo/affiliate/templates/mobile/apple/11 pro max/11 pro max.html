@@ -2,18 +2,20 @@
 {% block desc%}<meta name="description" content="Apple smartphone: New smartphone review and specification, buy at best price from amazon. "> {% endblock desc%}
 {% block key%}<meta name="keywords" content="apple 11 pro max, iphone 11 pro max, apple 11 pro max review, , iphone 11 pro max specification, iphone 11 pro max price in india, apple mobile phones youtube review"> {% endblock key%}
   {% load static %}
+  {% block style %}
+    <style>
+      .info{
+        padding-top: 10px;
+      }
+      .info span{
+        color:red;
+      }
+     </style>
+   {% endblock style %}
    {% block css%} <link rel="stylesheet" href="{% static 'pageCss/Mobile/mobileSpecCss.css' %}">{% endblock css%}
     {% block title%}Apple 11Pro Max Full specification: hipein.com{% endblock title%}
     {% block actmob%} class="active"{% endblock actmob%}
     {% block content%}
-    <style>
-         .info{
-           padding-top: 10px;
-         }
-         .info span{
-           color:red;
-         }
-       </style>
     <!-- review and spec -->
     <div class="wrapper">
       <div class="main">
@@ -333,7 +335,8 @@
         </div>
       </div>
     </div>
-    </div>
+  </div>
+</div>
     <!-- 13 -->
     <!-- footer -->
     {% endblock specs%}
