@@ -129,7 +129,7 @@
   <body>
     <header>
       <div class="logo">
-        <img class="logo-img" style="width: 250px; margin-left: -40px;" src="{% static 'image/logo/logo.png'%}" alt="">
+        <a href="{% url 'home' %}"><img class="logo-img" style="width: 250px; margin-left: -40px;" src="{% static 'image/logo/logo.png'%}" alt=""></a>
       </div>
       <div class="menu-toggle"></div>
       <nav>
@@ -157,7 +157,7 @@
 
     <footer>
       <div class="footer_info">
-        <img style="width: 150px; margin-left: -13px;" src="{% static 'image/logo/logo.png'%}" alt="">
+        <a href="{% url 'home' %}"><img style="width: 150px; margin-left: -13px;" src="{% static 'image/logo/logo.png'%}" alt=""></a>
         <p class="footer_about">Our Foremost motive is to serve you with correct product  review and price info. So, that this marketing arrangment can genearte you with honest purchases.</p>
         <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
         <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
