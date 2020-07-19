@@ -2,18 +2,20 @@
 {% block desc%}<meta name="description" content="Apple smartphone: New smartphone review and specification, buy at best price from flipkart. "> {% endblock desc%}
 {% block key%}<meta name="keywords" content="iphone x, iphone x reviews, iphone x specification, iphone x price in india, iphone x price"> {% endblock key%}
   {% load static %}
+  {% block style %}
+  <style>
+    .info{
+      padding-top: 10px;
+    }
+    .info span{
+      color:red;
+    }
+   </style>
+   {% endblock style %}
    {% block css%} <link rel="stylesheet" href="{% static 'pageCss/Mobile/mobileSpecCss.css' %}">{% endblock css%}
     {% block title%}Apple X Full specification: hipein.com{% endblock title%}
     {% block actmob%} class="active"{% endblock actmob%}
     {% block content%}
-    <style>
-         .info{
-           padding-top: 10px;
-         }
-         .info span{
-           color:red;
-         }
-       </style>
     <!-- review and spec -->
     <div class="wrapper">
       <div class="main">
@@ -28,9 +30,13 @@
         <div class="info">
           <h4 class="content">Apple X summary</h4>
           <p class="content">The iPhone X has to be one of the most-talked about tech products of 2017, and introduces a brand new paradigm for interaction, with gestures replacing buttons and a larger screen than on any previous iPhone. It shares most of its internals with the iPhone 8 and iPhone 8 Plus, including Apple’s own A11 Bionic chip and support for wireless charging. However, the 5.8-inch AMOLED panel is a first for any iPhone. Overall, the iPhone X display is great. The notch at the top contains the front camera and 3D sensors that make Face ID recognition possible. It works seamlessly and reliably on most occasions. Attention detection ensures that no one can unlock your iPhone X by simply pointing the device at your face when you are not looking. Animoji is a cool new feature that lets you pick an emoji and animate it using your own facial movements. You get optical image stabilisation on both rear cameras, and the iPhone X takes great pictures in nearly all scenarios.</p>
-          <div class="aff-link">
-            <a href="https://www.flipkart.com/apple-iphone-x-silver-256-gb/p/itmexrgv4cgmrxxp?pid=MOBEXRGVVTMF9FYV&lid=LSTMOBEXRGVVTMF9FYVWVE8YG&marketplace=FLIPKART&srno=s_1_1&otracker=search&otracker1=search&fm=SEARCH&iid=203d68b0-5c5b-4c67-91af-22dd842ed425.MOBEXRGVVTMF9FYV.SEARCH&ppt=sp&ppn=sp&ssid=5dak4ikqkw0000001594879137612&qH=f343a4633184ab46" class="affilated-link_amazon"><button type="button" class="btn btn-primary">Click here to Buy form flipkart</button></a>
-            <a href="https://www.flipkart.com/search?q=Apple%20x&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off" class="affilated-link_flipcart"><button type="button" class="btn btn-outline-primary">Click here for current price </button></a>
+          <div class="aff-link1">
+            <form action="https://www.flipkart.com/apple-iphone-x-silver-256-gb/p/itmexrgv4cgmrxxp?pid=MOBEXRGVVTMF9FYV&lid=LSTMOBEXRGVVTMF9FYVWVE8YG&marketplace=FLIPKART&srno=s_1_1&otracker=search&otracker1=search&fm=SEARCH&iid=203d68b0-5c5b-4c67-91af-22dd842ed425.MOBEXRGVVTMF9FYV.SEARCH&ppt=sp&ppn=sp&ssid=5dak4ikqkw0000001594879137612&qH=f343a4633184ab46">
+              <button class="btn btn-primary affilated-link_amazon" type="submit">Click here to Buy from flipkart</button>
+            </form>
+            <form action="https://www.flipkart.com/search?q=Apple%20x&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off">
+              <button  class="btn btn-outline-primary affilated-link_flipcart" type="submit">Click here for current price </button>
+            </form>
           </div>
           <p></p>
         </div>
@@ -327,5 +333,6 @@
       </div>
     </div>
   </div>
+</div>
     <!-- 13 -->
     {% endblock specs%}

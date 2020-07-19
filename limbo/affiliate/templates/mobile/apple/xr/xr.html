@@ -2,18 +2,20 @@
 {% block desc%}<meta name="description" content="Apple smartphone: New smartphone review and specification, buy at best price from flipkart. "> {% endblock desc%}
 {% block key%}<meta name="keywords" content="iphone xr, iphone xr reviews, iphone xr specification, iphone xr price in india, iphone xr price"> {% endblock key%}
     {% load static %}
+    {% block style %}
+    <style>
+      .info{
+        padding-top: 10px;
+      }
+      .info span{
+        color:red;
+      }
+     </style>
+     {% endblock style %}
    {% block css%} <link rel="stylesheet" href="{% static 'pageCss/Mobile/mobileSpecCss.css' %}">{% endblock css%}
     {% block title%}Apple XR Full specification: hipein.com{% endblock title%}
     {% block actmob%} class="active"{% endblock actmob%}
     {% block content%}
-    <style>
-         .info{
-           padding-top: 10px;
-         }
-         .info span{
-           color:red;
-         }
-       </style>
     <!-- review and spec -->
     <div class="wrapper">
       <div class="main">
@@ -29,10 +31,15 @@
           <h4 class="content">Apple XR summary</h4>
           <p class="content">The <span>iPhone XR</span> is wider than some of today's other popular large-screen Android smartphones and at 194g, it's certainly one of the heavier ones as well. It is also noticeably thicker than the two more premium iPhone models of 2018, and the bezels around its display are a little more pronounced than those of the iPhone XS, though most users won't be be bothered by the latter. the <span>iPhone XR</span> uses the same LCD tech as the <span>iPhone 8</span>.</p>
           <p class="content"><span>iphone XR</span> comes with single 12 Meg-pixel with 4k recording at 30fps and 5 mega-pixel front camera.The iPhone XR is powered by the same <span>Apple A12 Bionic</span> chip inside the iPhone XS duo, so it's no surprise that its performance is pretty similar. It handled everything that we threw at it with aplomb, something we've come to expect from a new iPhone, and indeed other smartphones in this price bracket.</p>
-          <div class="aff-link">
-            <a href="https://www.flipkart.com/apple-iphone-xr-white-256-gb/p/itmf9z7zsx9keyup?pid=MOBF9Z7ZEHAGRKZC&lid=LSTMOBF9Z7ZEHAGRKZCAQAGGA&marketplace=FLIPKART&srno=s_1_1&otracker=search&otracker1=search&fm=SEARCH&iid=84b26bfd-4548-44bc-808c-abbb942bf7f9.MOBF9Z7ZEHAGRKZC.SEARCH&ppt=sp&ppn=sp&ssid=t00r583yg00000001594879708268&qH=868ed02c58567157" class="affilated-link_amazon"><button type="button" class="btn btn-primary">Click here to Buy form flipkart</button></a>
-            <a href="https://www.flipkart.com/search?q=iphone%20XR&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off" class="affilated-link_flipcart"><button type="button" class="btn btn-outline-primary">Click here for current price </button></a>
+          <div class="aff-link1">
+            <form action="https://www.flipkart.com/apple-iphone-xr-white-256-gb/p/itmf9z7zsx9keyup?pid=MOBF9Z7ZEHAGRKZC&lid=LSTMOBF9Z7ZEHAGRKZCAQAGGA&marketplace=FLIPKART&srno=s_1_1&otracker=search&otracker1=search&fm=SEARCH&iid=84b26bfd-4548-44bc-808c-abbb942bf7f9.MOBF9Z7ZEHAGRKZC.SEARCH&ppt=sp&ppn=sp&ssid=t00r583yg00000001594879708268&qH=868ed02c58567157">
+              <button class="btn btn-primary affilated-link_amazon" type="submit">Click here to Buy from flipkart</button>
+            </form>
+            <form action="https://www.flipkart.com/search?q=iphone%20XR&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off">
+              <button  class="btn btn-outline-primary affilated-link_flipcart" type="submit">Click here for current price </button>
+            </form>
           </div>
+
           <p></p>
         </div>
     {% endblock content%}
@@ -299,6 +306,7 @@
         </div>
       </div>
     </div>
-    </div>
+  </div>
+</div>
     <!-- 13 -->
     {% endblock specs%}

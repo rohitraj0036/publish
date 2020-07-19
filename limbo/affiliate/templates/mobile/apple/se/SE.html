@@ -2,18 +2,20 @@
 {% block desc%}<meta name="description" content="Apple smartphone: New smartphone review and specification, buy at best price from flipkart. "> {% endblock desc%}
 {% block key%}<meta name="keywords" content="iphone se review, iphone se full specification, iphone se price in india,"> {% endblock key%}
   {% load static %}
+  {% block style %}
+  <style>
+    .info{
+      padding-top: 10px;
+    }
+    .info span{
+      color:red;
+    }
+   </style>
+   {% endblock style %}
    {% block css%} <link rel="stylesheet" href="{% static 'pageCss/Mobile/mobileSpecCss.css' %}">{% endblock css%}
     {% block title%}Apple SE Full specification{% endblock title%}
     {% block actmob%} class="active"{% endblock actmob%}
     {% block content%}
-    <style>
-      .info{
-          padding-top: 10px;
-      }
-      .info span{
-        color:red;
-      }
-       </style>
     <!-- review and spec -->
     <div class="wrapper">
       <div class="main">
@@ -31,9 +33,13 @@
           <p class="content">Apple iPhone SE based on iOS 9.3 and packs 64GB of inbuilt storage. The Apple iPhone SE is a single SIM (GSM) smartphone that accepts a Nano-SIM card. The Apple iPhone SE measures 123.80 x 58.60 x 7.66mm (height x width x thickness) and weighs 113.00 grams. It was launched in Gold, Rose Gold, Silver, and Space Grey colours.</p>
           <p class="content">As far as the cameras are concerned, the Apple iPhone SE on the rear packs 12-megapixel camera. It sports a 1.2-megapixel camera on the front for selfies</p>
           <p class="content">Connectivity options on the Apple iPhone SE include Wi-Fi, GPS, Bluetooth v4.20, NFC, 3G, and 4G (with support for Band 40 used by some LTE networks in India). Sensors on the phone include accelerometer, ambient light sensor, gyroscope, proximity sensor, and compass/ magnetometer.</p>
-          <div class="aff-link">
-            <a href="https://www.flipkart.com/apple-iphone-se-black-64-gb/p/itm832dd5963a08d?pid=MOBFRFXHCKWDAC4A&lid=LSTMOBFRFXHCKWDAC4AEQROVZ&marketplace=FLIPKART&srno=s_1_1&otracker=search&otracker1=search&fm=SEARCH&iid=bde54ffa-9b04-4fc9-9b0a-c0c5f0f5b823.MOBFRFXHCKWDAC4A.SEARCH&ppt=sp&ppn=sp&ssid=q8iq0py3680000001594879019988&qH=72cf29aedb578aec" class="affilated-link_amazon"><button type="button" class="btn btn-primary">Click here to Buy form flipkart</button></a>
-            <a href="https://www.flipkart.com/search?q=Apple%20SE&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off" class="affilated-link_flipcart"><button type="button" class="btn btn-outline-primary">Click here for current price </button></a>
+          <div class="aff-link1">
+            <form action="https://www.flipkart.com/apple-iphone-se-black-64-gb/p/itm832dd5963a08d?pid=MOBFRFXHCKWDAC4A&lid=LSTMOBFRFXHCKWDAC4AEQROVZ&marketplace=FLIPKART&srno=s_1_1&otracker=search&otracker1=search&fm=SEARCH&iid=bde54ffa-9b04-4fc9-9b0a-c0c5f0f5b823.MOBFRFXHCKWDAC4A.SEARCH&ppt=sp&ppn=sp&ssid=q8iq0py3680000001594879019988&qH=72cf29aedb578aec">
+              <button class="btn btn-primary affilated-link_amazon" type="submit">Click here to Buy from flipkart</button>
+            </form>
+            <form action="https://www.flipkart.com/search?q=Apple%20SE&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off">
+              <button  class="btn btn-outline-primary affilated-link_flipcart" type="submit">Click here for current price </button>
+            </form>
           </div>
           <p></p>
         </div>
@@ -314,6 +320,7 @@
         </div>
       </div>
     </div>
-    </div>
+  </div>
+</div>
     <!-- 13 -->
-    {% endblock specs%}
+  {% endblock specs%}
