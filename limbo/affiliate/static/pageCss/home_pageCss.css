@@ -346,6 +346,12 @@ footer{
     nav.active ul a{
       margin: 0;
     }
+    .carousel-inner img{
+      height: 180px;
+    }
+    .alert{
+
+    }
     .card-slide{
       width: 99%;
       margin:0;
