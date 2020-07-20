@@ -232,6 +232,12 @@ def realme_C3(request):
     price = {'product':product_price, 'product_name':product_name}
     return render(request,"mobile/realme/realme C3/realme C3.html", context=price)
 
+def realme_C11(request):
+    product_price = '7,499'
+    product_name = 'Realme C11'
+    price = {'product':product_price, 'product_name':product_name}
+    return render(request,"mobile/realme/realme C11/realme C11.html", context=price)
+
 # samsung pages
 def samsung(request):
     return render(request, "mobile/samsung/samsung_page/samsung.html")
