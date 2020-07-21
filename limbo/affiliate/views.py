@@ -50,6 +50,9 @@ def top_ten_mob(request):
 def battery(request):
     return render(request, "blog/battery/battery.html")
 
+def top_10_framework(request):
+    return render(request, "blog/programing/top-10-framework.html")
+
 # mi moblie page
 def redmi(request):
     return render(request, "mobile/mi/mi_page/mi_page.html")
