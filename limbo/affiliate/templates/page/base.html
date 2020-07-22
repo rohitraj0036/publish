@@ -1,4 +1,4 @@
-<!doctype html>
+generate<!doctype html>
 <html lang="en">
   <head>
     <!-- Required meta tags -->
@@ -335,6 +335,17 @@
     .copyright_text{
       margin-top: 10px;
     }
+    @media (max-width: 1500px){
+      .content_img img{
+        width: 410px;
+      }
+      button{
+        width: 250px;
+      }
+      .affilated-link_flipcart{
+        margin-left:30px;
+      }
+    }
     @media (max-width: 1200px) {
       .alert{
         flex: 1;
@@ -638,7 +649,7 @@
       </div>
       <div class="quick-link">
         <div class="link4 shadow">
-          <a class="row2" href="{% url 'battery'%}">Best Bettary Backup Mobile Phone</a>
+          <a class="row2" href="{% url 'battery'%}">Best Battery Backup Mobile Phone</a>
         </div>
         <div class="link5 shadow">
           <a href="{% url 'camera15k'%}">Best camera phone under <span>&#x20B9;</span>15000</a>
@@ -659,7 +670,7 @@
     <footer>
       <div class="footer_info">
         <a href="{% url 'home' %}"><img style="width: 150px; margin-left: -13px;" src="{% static 'image/logo/logo.png'%}" alt=""></a>
-        <p class="footer_about">Our Foremost motive is to serve you with correct product  review and price info. So, that this marketing arrangment can genearte you with honest purchases.</p>
+        <p class="footer_about">Our Foremost motive is to serve you with correct product  review and price info. So, that this marketing arrangement can genearte you with honest purchases.</p>
         <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
         <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
         <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>

@@ -67,6 +67,17 @@
     .affilated-link_flipcart{
       margin-left:30px;
     }
+    @media (max-width: 1500px){
+      .content_img img{
+        width: 410px;
+      }
+      button{
+        width: 250px;
+      }
+      .affilated-link_flipcart{
+        margin-left:30px;
+      }
+    }
     @media (max-width: 1200px) {
       .alert{
         flex: 1;
@@ -89,6 +100,9 @@
 
     }
       @media (max-width: 768px){
+        .aff-link1{
+          flex-direction: column;
+        }
         /* search_bar */
         .alert{
           display: none;
@@ -104,17 +118,15 @@
         #srh button{
           margin-left: 2px;
         }
-        .carousel-inner img{
-          height: 220px;
-        }
         .card-slide{
           margin-top: 10px;
         }
         .content{
-          height: 850px;
+          height: 870px;
         }
-        .aff-link1{
-          flex-direction: column;
+        .content_img img{
+          width: 99%;
+          height: 320px;
         }
         .affilated-link_amazon{
           margin-left:0;
@@ -193,7 +205,7 @@
     <footer>
       <div class="footer_info">
         <a href="{% url 'home' %}"><img style="width: 150px; margin-left: -13px;" src="{% static 'image/logo/logo.png'%}" alt=""></a>
-        <p class="footer_about">Our Foremost motive is to serve you with correct product  review and price info. So, that this marketing arrangment can genearte you with honest purchases.</p>
+        <p class="footer_about">Our Foremost motive is to serve you with correct product  review and price info. So, that this marketing arrangement can generate you with honest purchases.</p>
         <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
         <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
         <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
