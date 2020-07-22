@@ -64,7 +64,7 @@
       .blog{
         display: flex;
         width: 80%;
-        margin: auto;
+        margin: 20px 200px 20px 150px;
 
       }
       .blog-post{
@@ -77,8 +77,8 @@
       }
       .bloger-name{
         display: flex;
-        position: absolute;
-        top: 75%;
+        /* position: absolute; */
+        /* top: 75%; */
       }
       .bloger-name img{
         width: 70px;
@@ -104,13 +104,15 @@
       }
       .side-bloger-name{
         display: flex;
+        /* position: absolute; */
+        /* top: 47.8%; */
       }
 
       .side-bloger-name img{
-        width: 43px;
-        height: 41px;
+        width: 45px;
+        height: 43px;
         border-radius: 50%;
-        padding-left: 3px;
+        padding: 5px;
       }
       .side-bloger-name h6{
         padding: 13px 0 0 10px;
@@ -121,12 +123,14 @@
       }
       .side-bloger-name1{
         display: flex;
+        /* position: absolute; */
+        /* top: 79%; */
       }
       .side-bloger-name1 img{
-        width: 43px;
-        height: 41px;
+        width: 45px;
+        height: 44px;
         border-radius: 50%;
-        padding-left: 3px;
+        padding: 5px;
       }
       .side-bloger-name1 h6{
         padding: 13px 0 0 10px;
@@ -142,8 +146,8 @@
       }
       .blogs{
         display: flex;
-        width: 80%;
-        margin: auto;
+        width: 76.5%;
+        margin: 20px 200px 20px 150px;
       }
       .blog-post{
         margin-bottom: 20px;
@@ -151,13 +155,13 @@
         border-top: 1px solid #eee;
       }
       .blog-posts{
-        width: 70%;
+        width: 80%;
       }
       .post{
         display: flex;
       }
       .img-article{
-        width: 100%;
+        width: 420px;
       }
       .post-info{
         padding-left: 10px;
@@ -291,7 +295,7 @@
 
       @media (max-width: 1500px){
         .blog{
-          width: 100%;
+          width: 90%;
           margin: auto;
         }
         .bloger-name{
@@ -310,13 +314,14 @@
           width: 300px;
         }
         .blogs{
-          width: 90%;
+          width: 95%;
           margin: 20px 150px 20px 80px;
         }
         .blog-posts{
           width: 100%;
         }
         .aside{
+          width: 50%;
           padding-left: 10px;
         }
       }
@@ -360,11 +365,14 @@
         .post-info{
           font-size: 15px;
         }
+        .blogs{
+          flex-direction: column;
+        }
         .aside{
           width: 43%;
         }
         .img-article{
-          width: 100%;
+          width: 420px;
         }
         /* footer */
         .footer_info{
@@ -418,7 +426,7 @@
         }
         .blog-post{
           margin-top: 10px;
-          margin-left: 8px;
+          margin-left: 0px;
         }
         .bloger-name img{
           width: 43px;
@@ -469,7 +477,7 @@
         .blogs{
           flex-direction: column-reverse;
           width: 100%;
-          margin-left: 0px;
+          margin-left: 0;
         }
         .blog-posts{
           width: 100%;
@@ -574,7 +582,7 @@
           <article class="blog-post shadow">
             <div class="post">
               <div class="">
-                <img class="img-article" style="width: 337px" src="{% static 'image/mobile/battery/samsung-galaxy-m21.jpg'%}" alt="">
+                <img class="img-article"  src="{% static 'image/mobile/battery/samsung-galaxy-m21.jpg'%}" alt="">
               </div>
               <div class="post-info">
                 <h3 style="color:gray;">Top 10 best battery backup mobile</h3>
@@ -591,7 +599,7 @@
           <article class="blog-post shadow">
             <div class="post">
               <div class="">
-                <img class="img-article" style="width: 337px"  src="{% static 'image/article/programing/backend-frontend.png'%}" alt="">
+                <img class="img-article"   src="{% static 'image/article/programing/backend-frontend.png'%}" alt="">
               </div>
               <div class="post-info">
                 <h3 style="color:gray;">Top 10 backend Framework for web development</h3>
