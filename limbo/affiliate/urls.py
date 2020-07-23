@@ -42,6 +42,7 @@ urlpatterns = [
     path("mobile/oneplus-7T-pro", views.oneplus_7T_pro, name='OnePlus_7T_pro'),
     path("mobile/oneplus-8", views.oneplus_8, name='OnePlus_8'),
     path("mobile/oneplus-8-pro", views.oneplus_8_pro, name='OnePlus_8pro'),
+    path("mobile/oneplus-nord", views.oneplus_nord, name='OnePlus_nord'),
 
 
     # realme page link

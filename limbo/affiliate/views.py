@@ -169,6 +169,12 @@ def oneplus_8_pro(request):
     price = {'product':product_price, 'product_name':product_name}
     return render(request, "mobile/oneplus/oneplus 8pro/OnePlus_8_pro.html", context=price)
 
+def oneplus_nord(request):
+    product_price = '24,999'
+    product_name = 'OnePlus nord'
+    price = {'product':product_price, 'product_name':product_name}
+    return render(request, "mobile/oneplus/oneplus nord/OnePlus nord.html", context=price)
+
 
 
 # realme page link
