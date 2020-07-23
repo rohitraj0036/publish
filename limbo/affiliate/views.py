@@ -173,7 +173,7 @@ def oneplus_nord(request):
     product_price = '24,999'
     product_name = 'OnePlus nord'
     price = {'product':product_price, 'product_name':product_name}
-    return render(request, "mobile/oneplus/oneplus nord/OnePlus nord.html", context=price)
+    return render(request, "mobile/oneplus/oneplus_nord/OnePlus nord.html", context=price)
 
 
 
