@@ -54,7 +54,7 @@ urlpatterns = [
     path("mobile/realme-5pro", views.realme_5pro, name='realme5pro'),
     path("mobile/realme-5s", views.realme_5s, name='realme5s'),
     path("mobile/realme-6", views.realme_6, name='realme6'),
-    path("mobile/realme-6pro", views.realme_6pro, name='realme6pro'),
+    path("mobile/realme-6-pro", views.realme_6pro, name='realme6pro'),
     path("mobile/realme-C3", views.realme_C3, name='realmeC3'),
     path("mobile/realme-C11", views.realme_C11, name='realmeC11'),
 
