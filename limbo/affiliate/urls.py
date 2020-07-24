@@ -10,6 +10,7 @@ urlpatterns = [
     path("about", views.about, name='about'),
     path("search", views.search, name='search'),
 
+
     # blog mobile links
     path("mobile/Best-PUBG-mobile-between-under-10,000-20,000-INR", views.pubg, name='pubg'),
     path("mobile/Best-mobile-under-10,000-INR", views.mobile_10k, name='mobile10k'),
@@ -17,6 +18,7 @@ urlpatterns = [
     path("mobile/Best-top-10-mobile", views.top_ten_mob, name='toptenmob'),
     path("mobile/top-10-Best-battery-backup-mobile", views.battery, name='battery'),
     path("mobile/top-10-Best-backend-framework", views.top_10_framework, name='toptenframework'),
+    path("mobile/How-to-create-python-virtual-Environment", views.top_10_framework, name='pythonVenv'),
 
 
     # mi page links

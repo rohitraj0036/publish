@@ -53,6 +53,9 @@ def battery(request):
 def top_10_framework(request):
     return render(request, "blog/programing/top-10-framework.html")
 
+def python_venv(request):
+    return render(request, "blog/programing/python_venv.html")
+
 # mi moblie page
 def redmi(request):
     return render(request, "mobile/mi/mi_page/mi_page.html")

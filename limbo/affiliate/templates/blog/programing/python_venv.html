@@ -1,0 +1,98 @@
+{% extends 'page/bas.html' %}
+{% block desc%}<meta name="description" content=""> {% endblock desc%}
+{% block key%}<meta name="keywords" content="how to create python virtual Environment, python virtual Environment windows, python create virtual Environment, activate virtualenv window,  virtualenv python version, virtualenv python
+ ">
+ {% block style %}
+ <style>
+   .code{
+     background: #e9ecef;
+     border: 1px solid #e9ecef;
+     border-radius: 5px;
+     margin-bottom: 5px;
+   }
+   .code p{
+     margin: 4px;
+   }
+ </style>
+ {% endblock style %}
+ {% endblock key%}
+ {% block style %}
+ {% endblock style %}
+  {% load static %}
+    {% block title%}How to create python virtual Environment - hipein{% endblock title%}
+    {% block actmob%} class="active"{% endblock actmob%}
+    {% block content%}
+    <div class="wrapper">
+      <div class="main">
+        <div class="headline2">
+          <h1 class="content_tittle">How to create python virtual Environment</h1>
+          <p>By <span style="color:blue;">Rohit Raj</span>- Updated on <b style="color: gray;">23 July, 2020</b></p>
+          <div class="info">
+            <p></p>
+          <img class="image" src="{% static 'image/article/programing/venv.png'%}" alt="">
+          <p></p>
+          <hr class="my-2">
+          <p  class="content">Now a day python become most popular high level language. Python was created by Guido Van Rossum and released in 1991. In this entire article i will teach you <b>how to create python virtual Environment ?</b>. If you not install python IDE in your desktop yet, then installed pyhton from <a href="#">here</a> and choose python step up according to your OS.</p>
+          <div class="jumbotron">
+            <h1 class="display-4">What is virtualenv python ?</h1>
+            <p class="lead">A virtual environment is a tool that can create a separate environment for each different project, which has no connection to the remote project. It is one of the most important tools that most Python developers use.</p>
+          </div>
+        </div>
+      </div>
+    <div>
+
+
+    <div class="info">
+      <h2 class="content" style="padding-left:3px; border-left: 2px solid red">How does a virtual environment work?</h2>
+      <p class="content">We use a module named Virtualenv to create a separate virtual environment. After that we install the python package according to our project in that virtual environment.</p>
+      <h5><span>Step #1</span>. <b>Installing virtualenv</b> in window.<br></h5>
+      <p class="content">To install virtualenv in your system go to system terminal then type a command  which is given below:</p>
+      <div class="code">
+        <p>C:\Users\ASUS&gt;pip install virtualenv</p>
+      </div>
+      <hr class="my-2"><br>
+      <p></p>
+
+
+      <h5><span>Step #2</span>. Create a new folder.</h5>
+      <p class="content">After Installing virtualenv successfully, then create a new folder where to create virtual environment for your project. In my case will create a new folder in desktop and folder name is python venv. to setup virtual environment type a command which is given below:</p>
+      <div class="code">
+        <p>C:\Users\ASUS&gt;desktop&gt;python venv&gt;virtualenv myenv</p>
+      </div>
+      <p class="content"><b>Note</b> : In my case, I gave the name 'myenv' and you can give some other names as well. </p>
+      <hr class="my-2"><br>
+
+
+      <h5><span>step #3</span>: <b>activate virtualenv</b> in window.</h5>
+      <p class="content">After creating successfully  virtual environment,  you need to activate virtual environment. This can be done using the following command which is given below: </p>
+      <div class="code">
+        <p>C:\Users\ASUS&gt;desktop&gt;python venv&gt;myenv\Scripts\activate</p>
+      </div>
+      <p class="content">After activating the virtual environment, your terminal should look something like this. </p>
+      <div class="code">
+        <p>(myenv) C:\Users\ASUS&gt;desktop&gt;python venv&gt;</p>
+      </div>
+      <p class="content">You also need to know <b>how to deactivate virtual environment</b> by typing simple deactivate command.</p>
+      <div class="code">
+        <p >(myenv) C:\Users\ASUS&gt;desktop&gt;python venv&gt;deactivate</p>
+      </div>
+      <hr class="my-2"><br>
+
+
+      <h5><span>step #4</span>: <b>Installing Python package</b> in virtual environment.</h5>
+      <div class="code">
+        <p >(myenv) C:\Users\ASUS&gt;desktop&gt;python venv&gt;pip install Django==3.0.8</p>
+      </div>
+      <p class="content">The Django 3.0.8 package will be placed in myenv folder and will be isolated from the complete system. In this way you can install python packages which is need for your project. If don't know about django framework <a href="#">Click here</a> to read <b>top 10 backend frameworks</b>.</p>
+      <p class="content"></p>
+      <p class="content">Note : You can also check install python package in your virtual environment by using freeze command.</p>
+      <div class="code">
+        <p >(myenv) C:\Users\ASUS&gt;desktop&gt;python venv&gt;pip freeze</p>
+      </div>
+    </div><br>
+    <p>ThankYou :)</p><br>
+        <!-- 2 -->
+  </div>
+</div>
+
+{% endblock content%}
