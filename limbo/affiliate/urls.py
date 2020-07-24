@@ -18,7 +18,7 @@ urlpatterns = [
     path("mobile/Best-top-10-mobile", views.top_ten_mob, name='toptenmob'),
     path("mobile/top-10-Best-battery-backup-mobile", views.battery, name='battery'),
     path("mobile/top-10-Best-backend-framework", views.top_10_framework, name='toptenframework'),
-    path("mobile/How-to-create-python-virtual-Environment", views.top_10_framework, name='pythonVenv'),
+    path("mobile/How-to-create-python-virtual-Environment", views.python_venv, name='pythonVenv'),
 
 
     # mi page links
