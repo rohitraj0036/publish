@@ -74,7 +74,6 @@ nav ul li a:hover{
 }
 /* side-bar */
 .sidebar{
-  height: 100%;
   width: 36%; /* Set the width- of the sidebar */
   position: absolute ;
   z-index: 1;
