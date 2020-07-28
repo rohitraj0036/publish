@@ -12,9 +12,9 @@ urlpatterns = [
 
 
     # blog mobile links
-    path("mobile/Best-PUBG-mobile-between-under-10,000-20,000-INR", views.pubg, name='pubg'),
-    path("mobile/Best-mobile-under-10,000-INR", views.mobile_10k, name='mobile10k'),
-    path("mobile/Best-camera-mobile-under-15,000-INR", views.camera_15k, name='camera15k'),
+    path("mobile/Best-PUBG-mobile-between-under-10000-20000-INR", views.pubg, name='pubg'),
+    path("mobile/Best-mobile-under-10000-INR", views.mobile_10k, name='mobile10k'),
+    path("mobile/Best-camera-mobile-under-15000-INR", views.camera_15k, name='camera15k'),
     path("mobile/Best-top-10-mobile", views.top_ten_mob, name='toptenmob'),
     path("mobile/top-10-Best-battery-backup-mobile", views.battery, name='battery'),
     path("mobile/top-10-Best-backend-framework", views.top_10_framework, name='toptenframework'),
@@ -71,7 +71,7 @@ urlpatterns = [
     path("mobile/samsung-galaxy-s10e", views.s10e, name='s10e'),
     path("mobile/samsung-galaxy-s20", views.s20, name='s20'),
     path("mobile/samsung-galaxy-s20-ultra", views.s20_ultra, name='s20ultra'),
-    path("mobile/samsung-galaxy-s20_plus", views.s20_plus, name='s20plus'),
+    path("mobile/samsung-galaxy-s20-plus", views.s20_plus, name='s20plus'),
     path("mobile/samsung-galaxy-z-flip", views.z_flip, name='zflip'),
 
     # apple page link
