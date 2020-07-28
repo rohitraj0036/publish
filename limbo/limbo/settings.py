@@ -54,7 +54,7 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'limbo.urls'
-SITE_ID = 1
+SITE_ID = 3
 
 TEMPLATES = [
     {
