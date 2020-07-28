@@ -1,7 +1,15 @@
 from django.urls import path
 from. import views
+from .sitemaps import product_sitemap , article_sitemap
+from django.contrib.sitemaps.views import sitemap
+
+sitemaps ={
+    'article': article_sitemap,
+    'product': product_sitemap
+}
 
 urlpatterns = [
+    path('sitemap.xml', sitemap, {'sitemaps': sitemaps}),
     path("", views.home, name= 'home'),
     path("mobile", views.mob, name='mobile'),
     # path("laptop", views.laptop, name='laptop'),
