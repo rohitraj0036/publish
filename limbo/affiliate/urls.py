@@ -25,9 +25,13 @@ urlpatterns = [
     path("mobile/Best-camera-mobile-under-15000-INR", views.camera_15k, name='camera15k'),
     path("mobile/Best-top-10-mobile", views.top_ten_mob, name='toptenmob'),
     path("mobile/top-10-Best-battery-backup-mobile", views.battery, name='battery'),
-    path("mobile/top-10-Best-backend-framework", views.top_10_framework, name='toptenframework'),
-    path("mobile/How-to-create-python-virtual-Environment", views.python_venv, name='pythonVenv'),
-    path("mobile/10-upcoming-mobile-phone-in-2020", views.upcoming_mobile, name='upcomingMobile'),
+
+    # programing
+    path("top-10-Best-backend-framework", views.top_10_framework, name='toptenframework'),
+    path("programing/How-to-create-python-virtual-Environment", views.python_venv, name='pythonVenv'),
+
+    # technology
+    path("10-upcoming-mobile-phone-in-2020", views.upcoming_mobile, name='upcomingMobile'),
 
 
     # mi page links
