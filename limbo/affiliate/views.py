@@ -201,7 +201,7 @@ def narzo(request):
 
 def realme_x2(request):
     product_price = '16,999'
-    product_name = 'Realme X@'
+    product_name = 'Realme X2'
     price = {'product':product_price, 'product_name':product_name}
     return render(request, "mobile/realme/realme X2/realme X2.html", context=price)
 
@@ -252,6 +252,9 @@ def realme_C11(request):
     product_name = 'Realme C11'
     price = {'product':product_price, 'product_name':product_name}
     return render(request,"mobile/realme/realme c11/realme c11.html", context=price)
+
+def realme_C15(request):
+    return render(request,"mobile/realme/realme c15/realme-c15.html")
 
 # samsung pages
 def samsung(request):
