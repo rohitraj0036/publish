@@ -1,18 +1,228 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     {% block desc%} {% endblock desc%}
     {% block key%} {% endblock key%}
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.min.js" ></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+    <!-- Bootstrap CSS -->
     {% load static%}
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="{% static 'pageCss/Mobile/mobileSpecCss.css' %}">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     {% block style %} {% endblock style %}
+    <style>
+    .search_bar{
+      width: 100%;
+      display: flex;
+      height: 55px;
+      border: 1px solid;
+      position: relative;
+      margin-bottom: 1rem;
+      border: 1px solid transparent;
+      background: #0984e3;
+      color: white;
+    }
+    .alert{
+      flex: 2;
+    }
+    #srh{
+      margin-top: 9px;
+      margin-right: 10px;
+      float: right;
+    }
+
+    #srh input{
+      width: 410px;
+      height: 35px;
+      border: 1px solid #0984e3;
+      border-radius: 2px;
+      padding: 0 0 2px 10px ;
+    }
+
+    #srh button{
+      width: 80px;
+      height: 33px;
+      color: #fff;
+      background-color: #0984e3;
+      border: 1px solid #fff;
+      border-radius: 2px;
+      padding-bottom: 2px;
+    }
+
+    #srh button:hover{
+      color: #fff;
+      border: 1px solid #fff;
+    }
+    span{
+      color: red;
+    }
+    .sidebar{
+      top:150px;
+    }
+    .aff-link1{
+      display: flex;
+    }
+    .aff-link1 button{
+      width: 300px;
+      margin-left: 30px;
+    }
+    .aff-link1{
+      margin-top: 20px;
+    }
+    .headline{
+      height: 100px;
+    }
+    .aside{
+      width: 100%;
+      padding-left: 10px;
+    }
+    .aside h4{
+      border-bottom: 1px solid #eee;
+      color: gray;
+    }
+    .badge a:hover{
+      text-decoration: none;
+    }
+    .Categories{
+      margin-left: 240px;
+      font-weight: 500;
+    }
+    .social {
+      padding: 20px;
+      font-size: 20px;
+      width: 60px;
+      text-align: center;
+      text-decoration: none;
+    }
+    .social:hover {
+      color: white;
+      text-decoration: none;
+    }
+
+    /* Facebook */
+    .social-fb {
+      background: #3B5998;
+      color: white;
+    }
+    /* twitter */
+    .social-twit {
+      background: #55ACEE;
+      color: white;
+      margin-left: 10px;
+    }
+    /* instagram */
+    .social-insta{
+      background: #dd4b39;
+      color: white;
+      margin-left: 10px;
+    }
+    .Category{
+      padding-top: 20px;
+    }
+    .cat-link{
+      padding-top: 10px;
+    }
+    .cat-link a:hover{
+      text-decoration: none;
+      background-color:#007bff;
+      color: white
+    }
+    .cat1{
+      border: 1px solid;
+      padding: 4px 15px;
+      text-decoration: none;
+      border-radius: 10px;
+    }
+    .cat2{
+      border: 1px solid;
+      padding: 4px 8px;
+      margin-left: 10px;
+      text-decoration: none;
+      border-radius: 10px;
+    }
+    .cat3{
+      border: 1px solid;
+      padding: 4px 14px;
+      margin-left: 10px;
+      text-decoration: none;
+      border-radius: 10px;
+    }
+    @media (max-width: 1200px) {
+      .alert{
+        flex: 1;
+      }
+      #srh{
+        position: relative;
+        margin-left: 0px;
+        width: 50%;
+      }
+      #srh input{
+        width: 82%;
+      }
+      #srh button{
+        margin-left: 5px;
+      }
+      button{
+        width: 300px;
+      }
+      .affilated-link_flipcart{
+        margin-left:30px;
+      }
+      .aside{
+        width: 43%;
+      }
+    }
+      @media (max-width: 768px){
+        /* search_bar */
+        .alert{
+          display: none;
+        }
+        #srh{
+          width: 97%;
+          left: 10px;
+        }
+        #srh input{
+          width: 75%;
+        }
+        #srh button{
+          margin-left: 2px;
+        }
+        .aff-link1 button{
+          width: 90%;
+          margin-left: 0;
+          margin-top: 10px;
+        }
+        .aff-link1{
+          flex-direction: column;
+        }
+        .affilated-link_flipcart{
+          margin-left: 0;
+        }
+        .aside{
+          width: 100%;
+        }
+        .Categories{
+          margin-left: 140px;
+        }
+      }
+      @media (max-width: 640px){
+        #srh{
+          width: 100%;
+          margin-left: 5px;
+        }
+        #srh input{
+          width: 73%;
+        }
+      }
+    </style>
     <title>{% block title%} {% endblock title%}</title>
   </head>
   <body>
@@ -31,6 +241,7 @@
       </nav>
       <div class="clearfix"></div>
     </header>
+    <!-- greet-user -->
     <div class="search_bar">
       <div class="alert">
         Hey, User Welcome Back to our Website.
@@ -42,6 +253,8 @@
     </div>
     {% block content%}  {% endblock content%}
       <div class="sidebar">
+
+        <!-- <h3 class="lt-title">Headline</h3> -->
         <div class="headline">
           <img src="{% static 'image/mobile/oneplus/oneplus-nord-2.jpg' %}" alt="">
           <div class="headline-text">
@@ -109,6 +322,7 @@
       </div>
     </div>
     {% block specs%}  {% endblock specs%}
+
     <footer>
       <div class="footer_info">
         <a href="{% url 'home' %}"><img style="width: 150px; margin-left: -13px;" src="{% static 'image/logo/logo.png'%}" alt=""></a>
