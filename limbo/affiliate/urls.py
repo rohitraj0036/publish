@@ -27,11 +27,11 @@ urlpatterns = [
     path("mobile/top-10-Best-battery-backup-mobile", views.battery, name='battery'),
 
     # programing
-    path("top-10-Best-backend-framework", views.top_10_framework, name='toptenframework'),
+    path("programing/top-10-Best-backend-framework", views.top_10_framework, name='toptenframework'),
     path("programing/How-to-create-python-virtual-Environment", views.python_venv, name='pythonVenv'),
 
     # technology
-    path("10-upcoming-mobile-phone-in-2020", views.upcoming_mobile, name='upcomingMobile'),
+    path("technology/10-upcoming-mobile-phone-in-2020", views.upcoming_mobile, name='upcomingMobile'),
 
 
     # mi page links

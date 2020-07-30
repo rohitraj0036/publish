@@ -20,7 +20,7 @@ class product(models.Model):
 class article(models.Model):
     title = models.CharField(max_length=60)
     categories = models.CharField(max_length=60, default='')
-    slug = models.SlugField(max_length=130)
+    slug = models.CharField(max_length=130)
     date = models.DateField()
 
     def __str__(self):
