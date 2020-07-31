@@ -123,6 +123,9 @@ def redmi_8a(request):
     price = {'product':product_price, 'product_name':product_name}
     return  render(request, "mobile/mi/redmi 8A/redmi 8A.html", context=price)
 
+def poco_f2(request):
+    return  render(request, "mobile/mi/poco f2/poco-f2.html")
+
 # oneplus page
 def oneplus(request):
     return render(request, "mobile/oneplus/oneplus_page/OnePlus .html")
