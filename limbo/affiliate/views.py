@@ -85,7 +85,7 @@ def note_7_pro(request):
     product_price = '16,999'
     product_name = 'Redmi note 97pro'
     price = {'product':product_price, 'product_name':product_name}
-    return  render(request, "mobile/mi/note 7pro/note 7 pro.html", context=price)
+    return  render(request, "mobile/mi/Note 7pro/note 7 pro.html", context=price)
 
 def note_7s(request):
     product_price = '16,999'
@@ -176,7 +176,7 @@ def oneplus_8_pro(request):
     product_price = '16,999'
     product_name = 'OnePlus 8 Pro'
     price = {'product':product_price, 'product_name':product_name}
-    return render(request, "mobile/oneplus/oneplus 8pro/OnePlus_8_pro.html", context=price)
+    return render(request, "mobile/oneplus/oneplus 8pro/OnePlus_8_Pro.html", context=price)
 
 def oneplus_nord(request):
     product_price = '24,999'
