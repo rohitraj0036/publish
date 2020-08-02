@@ -1,10 +1,7 @@
 {% extends 'page/bas.html' %}
 {% block desc%}<meta name="description" content="It is very easy to use. flimorago is the best video editing app in 2020 with advanced features. If you are creative then this app is best to start with editing."> {% endblock desc%}
 {% block key%}<meta name="keywords" content="filmorago, how to edit video by using filmorago, best video editing app, best video editing app in 2020, video editing apps"> {% endblock key%}
-  {% load static %}
-    {% block title%}FilmoraGo - Best video editing apps for android (july 2020)- hipein.com{% endblock title%}
-    {% block actart%} class="active"{% endblock actart%}
-    {% block content%}
+    {% block style %}
     <style>
       .image1{
         width: 250px;
@@ -25,10 +22,16 @@
         }
       }
       @media (max-width: 768px){
-          margin-left: 300px;
-
+        .image1{
+          margin-left: 0;
         }
+      }
     </style>
+    {% endblock style %}
+    {% load static %}
+    {% block title%}FilmoraGo - Best video editing apps for android (july 2020)- hipein.com{% endblock title%}
+    {% block actart%} class="active"{% endblock actart%}
+    {% block content%}
     <!-- review and spec -->
     <div class="wrapper">
       <div class="main">
