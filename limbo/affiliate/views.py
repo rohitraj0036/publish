@@ -56,8 +56,13 @@ def top_10_framework(request):
 def python_venv(request):
     return render(request, "blog/programing/python_venv.html")
 
+# technology
 def upcoming_mobile(request):
     return render(request, "blog/technology/upcoming-mobile.html")
+
+# app
+def filmorago(request):
+    return render(request, "blog/apps/filmorago/filmorago.html")
 
 # mi moblie page
 def redmi(request):

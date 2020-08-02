@@ -33,6 +33,10 @@ urlpatterns = [
     # technology
     path("technology/10-upcoming-mobile-phone-in-2020", views.upcoming_mobile, name='upcomingMobile'),
 
+    # apps
+    path("apps/filmorago- Best-video-editing-app-in-2020", views.filmorago, name='filmorago'),
+
+
 
     # mi page links
     path("mobile/xiaomi", views.redmi, name='xiaomi'),
