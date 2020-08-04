@@ -200,6 +200,9 @@ nav ul li a:hover{
 
 
 @media (max-width: 1300px) {
+  .spec_title{
+    width: 100%;
+  }
   .sidebar{
     left: 70%;
     width: 35%;
@@ -283,11 +286,7 @@ footer{
 
 /* responsive css */
 @media (max-width: 1200px) {
-    header{
-      /* margin: 20px; */
-    }
     .alert{
-      /* margin-left: 20px; */
       width: 100%;
     }
     .sidebar{
