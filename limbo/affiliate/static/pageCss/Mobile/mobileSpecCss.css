@@ -178,6 +178,7 @@ nav ul li a:hover{
 }
 .specs_info strong{
   width: 100px;
+  font-weight: 600;
 }
 .specs_info p{
   padding-left: 30px;
@@ -194,6 +195,7 @@ nav ul li a:hover{
 }
 .specs_info1 strong{
   width: 100px;
+  font-weight: 600;
 }
 
 
