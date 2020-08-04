@@ -31,7 +31,7 @@ urlpatterns = [
     path("programing/How-to-create-python-virtual-Environment", views.python_venv, name='pythonVenv'),
 
     # technology
-    path("technology/10-upcoming-mobile-phone-in-2020", views.upcoming_mobile, name='upcomingMobile'),
+    path("technology/upcoming-mobile-phone", views.upcoming_mobile, name='upcomingMobile'),
 
     # apps
     path("apps/filmorago-Best-video-editing-app-in-2020", views.filmorago, name='filmorago'),
