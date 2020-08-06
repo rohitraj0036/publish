@@ -277,6 +277,9 @@ def samsung(request):
 def note_10(request):
     return render(request, "mobile/samsung/note 10/note 10.html")
 
+def note_20(request):
+    return render(request, "mobile/samsung/note 20/note 20.html")
+
 def note_10plus(request):
     return render(request, "mobile/samsung/note 10plus/note 10plus.html")
 
