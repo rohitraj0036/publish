@@ -280,6 +280,9 @@ def note_10(request):
 def note_20(request):
     return render(request, "mobile/samsung/note 20/note 20.html")
 
+def note_20_ultra(request):
+    return render(request, "mobile/samsung/note 20 ultra/note 20 ultra.html")
+
 def note_10plus(request):
     return render(request, "mobile/samsung/note 10plus/note 10plus.html")
 

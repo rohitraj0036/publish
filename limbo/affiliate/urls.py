@@ -87,6 +87,7 @@ urlpatterns = [
     path("mobile/samsung", views.samsung, name='samsung'),
     path("mobile/samsung-galaxy-note-10", views.note_10, name='note10'),
     path("mobile/samsung-galaxy-note-20", views.note_20, name='note20'),
+    path("mobile/samsung-galaxy-note-20-ultra", views.note_20_ultra, name='note20ultra'),
     path("mobile/samsung-galaxy-note-10-plus", views.note_10plus, name='note10plus'),
     path("mobile/samsung-galaxy-s10", views.s10, name='s10'),
     path("mobile/samsung-galaxy-s10-plus", views.s10_plus, name='s10plus'),
