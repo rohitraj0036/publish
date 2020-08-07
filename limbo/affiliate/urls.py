@@ -25,6 +25,7 @@ urlpatterns = [
     path("mobile/Best-camera-mobile-under-15000-INR", views.camera_15k, name='camera15k'),
     path("mobile/Best-top-10-mobile", views.top_ten_mob, name='toptenmob'),
     path("mobile/top-10-Best-battery-backup-mobile", views.battery, name='battery'),
+    path("mobile/iphone-12", views.iphone_12, name='iphone12'),
 
     # programing
     path("programing/top-10-Best-backend-framework", views.top_10_framework, name='toptenframework'),
