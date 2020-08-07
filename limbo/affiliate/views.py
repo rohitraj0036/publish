@@ -47,7 +47,7 @@ def camera_15k(request):
 def top_ten_mob(request):
     return render(request, "blog/best-top-10/best-top-10.html")
 
-def top_ten_mob(request):
+def iphone_12_blog(request):
     return render(request, "mobile/apple/12/12.html")
 
 def battery(request):
