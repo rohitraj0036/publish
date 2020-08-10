@@ -36,6 +36,7 @@ urlpatterns = [
 
     # apps
     path("apps/filmorago-Best-video-editing-app-in-2020", views.filmorago, name='filmorago'),
+    path("apps/best-android-game", views.android_game, name='androidgame'),
 
 
 

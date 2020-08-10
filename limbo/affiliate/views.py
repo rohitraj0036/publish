@@ -10,9 +10,6 @@ def home(request):
 def mob(request):
     return render(request, 'page/mobile_page.html')
 
-# def laptop(request):
-#     return render(request, 'page/laptop_page.html')
-
 # def music(request):
 #     return render(request, 'page/music_page.html')
 
@@ -66,6 +63,9 @@ def upcoming_mobile(request):
 # app
 def filmorago(request):
     return render(request, "blog/apps/filmorago/filmorago.html")
+
+def android_game(request):
+    return render(request, "blog/apps/game/top-10-android-game.html")
 
 # mi moblie page
 def redmi(request):
