@@ -60,6 +60,9 @@ def python_venv(request):
 def upcoming_mobile(request):
     return render(request, "blog/technology/upcoming-mobile.html")
 
+def add_me_to_search(request):
+    return render(request, "blog/technology/add-me-to-search.html")
+
 # app
 def filmorago(request):
     return render(request, "blog/apps/filmorago/filmorago.html")

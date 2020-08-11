@@ -33,6 +33,7 @@ urlpatterns = [
 
     # technology
     path("technology/upcoming-mobile-phone", views.upcoming_mobile, name='upcomingMobile'),
+    path("technology/add-me-to-search", views.add_me_to_search, name='addmetosearch'),
 
     # apps
     path("apps/filmorago-Best-video-editing-app-in-2020", views.filmorago, name='filmorago'),
