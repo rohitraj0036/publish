@@ -50,11 +50,15 @@ def iphone_12_blog(request):
 def battery(request):
     return render(request, "blog/battery/battery.html")
 
+# programing
 def top_10_framework(request):
     return render(request, "blog/programing/top-10-framework.html")
 
 def python_venv(request):
     return render(request, "blog/programing/python_venv.html")
+
+def search_bar(request):
+    return render(request, "blog/programing/search bar.html")
 
 # technology
 def upcoming_mobile(request):

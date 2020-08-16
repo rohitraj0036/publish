@@ -1,0 +1,284 @@
+{% extends 'page/bas.html' %}
+{% block desc%}<meta name="description" content="In this article, we are going to learn how to add a search bar on your website using the Django web framework. if don't know about the Django web framework click here."> {% endblock desc%}
+{% block key%}<meta name="keywords" content="How to add a search bar in Django, search bar in Django"> {% endblock key%}
+    {% block style %}
+    <style>
+      pre{
+        font-family: sans-serif ;
+        font-size: 16px;
+      }
+      p{
+        font-family: sans-serif ;
+        font-size: 16px;
+      }
+      .code{
+        background: #E8E8E8;
+        border: 1px solid #E8E8E8;
+        border-radius: 5px;
+        margin-bottom: 5px;
+      }
+      .code p{
+        margin: 4px 10px;
+      }
+      .command{
+        border: 1px solid gray;
+        border-radius: 4px;
+        padding: 2px;
+        background: #fafafa;
+        color: gray;
+      }
+      @media (max-width: 768px){
+        p{
+          font-size: 19px;
+        }
+      }
+    </style>
+    {% endblock style %}
+    {% load static %}
+    {% block title%}How to add a search bar in Django in just 30 minutes{% endblock title%}
+    {% block actart%} class="active"{% endblock actart%}
+    {% block content%}
+    <div class="wrapper">
+      <div class="main">
+        <div class="headline2">
+          <h1 class="content_tittle" style="font-weight: 750;" >How to add a search bar in Django site</h1>
+          <p>By <a href="#">Rohit Raj</a>- Updated on <b style="color: gray;">11 August 2020</b></p>
+          <hr class="my-2">
+          <p>In this article, we are going to learn how to add a search bar on your website using the Django web framework. if don't know about the Django web framework <a href="https://docs.djangoproject.com/en/3.0/">click here</a>.</p>
+          <img class="image" src="{% static 'image/article/programing/search bar/info django.jpg'%}" alt="">
+          <p></p>
+          <h4 style="padding-left:3px; border-left: 2px solid red; font-weight: 500;"> What is the Django web framework?</h4>
+          <p>Before getting started you should know about <a href="#">Django</a>. Django is a Python-based <a href="https://www.djangoproject.com/">web framework</a>.  like all other modern frameworks, Django also follows the MVC (Model–view–controller) architectural pattern.</p><p>Django developers say the applications are it’s ridiculously fast, secure, scalable, and versatile. Django serves a big collection of modules that you can use in your projects. Django frameworks exist to save developers a lot of wasted time and headaches.</p>
+          <hr class="my-2">
+          <p></p>
+        </div>
+        <div class="info">
+          <h2  style="padding-left:3px; border-left: 2px solid red; font-weight: 500;">How to add a search bar in Django site</h2>
+          <p class="content"></p>
+          <p>First of all, you have to create a folder, I have created a folder named shop, you can name your project according to your own. </p>
+          <p>You can open the command line or you can also open the PowerShell (to open PowerShell use <span class= "command">Shift + mouse right button</span> ) in that folder to start the Django project.</p><br>
+          <div class="code content">
+            <p>$ pip install django==2.2.1 <br>
+              $ django-admin startproject shop<br>
+              $ python manage.py runserver</p>
+          </div><br>
+          <p>Install the latest version of Django with the help of <span class= "command">pip</span> command. I named my project shop by using the <span class= "command">django-admin startproject shop</span> command.</p>
+          <p>To see if your Django project is working properly or not, use <span class= "command">python manage.py runserver</span> command in your command line.</p>
+          <p>open your web browser, type <a href="http://127.0.0.1:8">http://127.0.0.1:8</a> in the URL section and you’ll see the Django welcome page which confirms everything is configured properly.</p>
+          <img class="image" src="{% static 'image/article/programing/search bar/1.png'%}" alt="">
+          <hr class="my-2">
+        </div>
+        <div class="info">
+          <h3  style="padding-left:3px; border-left: 2px solid red; font-weight: 500;">Product app</h3>
+          <p class="content"></p>
+          <p>Now we will create an app whose name will be <span class= "command">Product</span>, in which we will store all product information. If you want, you can name your app something else. I can explain you well, so I will keep this project as simple as possible. </p>
+          <p>To create an app you need to run a <span class= "command">startapp</span> command in the command line.</p>
+          <div class="code content">
+            <p>$ python manage.py startapp product</p>
+          </div><br>
+          <p>You need to update <span class= "command">INSTALLED_APP</span> in the <span class= "command">setting.py</span> file to inform Django about the app you have created.</p>
+          <div class="code content">
+          <pre class="code content">  <i># shop/settings.py</i>
+  INSTALLED_APPS = [
+            ...
+            '<span>product.apps.ProductConfig</span>'
+  ]</pre>
+          </div><br>
+          <hr class="my-2">
+        </div>
+        <div class="info">
+          <h3  style="padding-left:3px; border-left: 2px solid red; font-weight: 500;">models.py</h3>
+          <p class="content"></p>
+          <p>We have to create a class inside <span class= "command">models.py</span> named Product_List and it will have five fields: name, price, categories, slug, and image. And finally set <span class= "command">__str__ </span>to display the name of the product in Django admin.</p>
+          <div class="code content">
+          <pre class="content">  <i># product/models.py</i>
+  from django.db import models <br>
+  class <b>Product_List</b>(models.Model):
+        name         = models.CharField(max_length=255)
+        price          = models.IntegerField()
+        categories = models.CharField(max_length=60, default='')
+        slug           = models.CharField(max_length=255)
+        image        = models.ImageField(upload_to='product-image', default='')
+
+        def __str__(self):
+              return self.name</pre>
+          </div><br>
+          <p>after creating <span class= "command">Product_List</span> class now we do migrate our class in the Django database. There are some commands that you need to follow. </p>
+          <p>The first commands are <span class= "command">makemigration</span>, this means that you are telling Django that you have made some changes to your model and that you are liking the changes that have to be stored as migration.</p>
+          <p>the second command are <span class= "command">migrate</span>, this means that you have applied all change you have done in your model.</p>
+          <div class="code content">
+            <p>$ python manage.py makemigrations<br>
+              $ python manage.py migrate</p>
+          </div><br>
+          <hr class="my-2">
+          <h3  style="padding-left:3px; border-left: 2px solid red; font-weight: 500;">Admin site</h3>
+          <p>There are many ways to add product information, but by creating an <span class= "command">admin site</span> you can add, change, or delete products in a much easier way. Create a superuser account so we can log in to the admin type a command which is given below.</p>
+          <div class="code content">
+            <p>$ python manage.py createsuperuser</p>
+          </div><br>
+          <p>after successfully creating user admin you need to update <span class= "command">product/admin.py</span> to display our app within the admin. Here we import <span class= "command">Product_List</span> from <span class= "command">models.py</span> to register your model in <span class= "command">admin.py</span.</p>
+          <div class="code content">
+            <pre class="content"> <i># cities/admin.py</i>
+  from django.contrib import admin
+  <span>from .models import Product_List</span>
+
+  <i># Register your models here.</i>
+  admin.site.register(Product_List)</pre>
+          </div><br>
+          <p>here you have to start your server again with <span class= "command">python manage.py runserver</span> and Open this <a href="http://127.0.0.1:8">http://127.0.0.1:8/admin</a> link in your web browser. You should see the admin’s login screen and log in with your superuser account.  </p>
+          <img class="image" src="{% static 'image/article/programing/search bar/2.jpg'%}" alt="">
+          <p>After successful login, your page looks similar to the image above. Click on the <span class= "command">product</span> and add some product information you can see on my product list. to add product in your list click on the <span class= "command">add product</span> button.</p>
+          <img class="image" src="{% static 'image/article/programing/search bar/3.png'%}" alt="">
+          <hr class="my-2">
+        </div>
+        <div class="info">
+          <h2  style="padding-left:3px; border-left: 2px solid red; font-weight: 500;">Adding Search Functionality to a django project.</h2>
+          <p class="content"></p>
+          <p>We have done something so far. If there is no search option on a website, then the website is incomplete, so we are now adding the search functionality to the Django project.</p>
+          <p>First, we will update views.py and urls.py, it will make it easier to build our project. After that, we will update the templates, homepage, and search page.</p>
+          <h3 style="padding-left:3px; border-left: 2px solid red; font-weight: 500;">views.py</h3>
+          <p>Open the file product/views.py and put the following Python code in it:</p>
+          <div class="code content">
+            <pre class="content">  <i># product/views.py</i>
+
+    from django.shortcuts import render
+    from .models import <span>Product_List</span>
+
+    def <b>HomePage</b>(request):
+        return render(request, 'home page.html')
+
+    def <b>SearchPage</b>(request):
+        return render(request, 'search page.html')
+
+  </pre>
+          </div><br>
+          <p>As you can see here, we have imported the <span>Product_List</span> class from the <span class= "command">models.py</span> list in our <span class= "command">views.py</span>. We will understand later why we imported the Product_List in <span class= "command">views.py</span></p>
+          <h3 style="padding-left:3px; border-left: 2px solid red; font-weight: 500;">Edit SearchPage views.py</h3>
+          <p>You, we will connect our search page to the Django database.</p>
+          <div class="code content">
+            <pre class="content">  <i># product/views.py</i>
+
+    from django.shortcuts import render
+    from .models import <span>Product_List</span>
+
+    def <b>HomePage</b>(request):
+        return render(request, 'home page.html')
+
+    def <b>SearchPage</b>(request):
+        srh = request.GET['query']
+        products = product.objects.filter(name__icontains=srh)
+        params = {'products': products, 'search':srh}
+        return render(request, 'search page.html', params)
+
+  </pre>
+          </div><br>
+          <p>Here we have created a function, in this function we are using <span class="command">Django-filter</span>. Django-filter provides a simple way to filter the queryset based on user-provided parameters. Suppose we have a <span class="command">Product_List</span> model and we want to allow our users to filter the products they see on a search page. </p>
+          <h3 style="padding-left:3px; border-left: 2px solid red; font-weight: 500;">urls.py</h3>
+          <p>Now we will update the path of our home page and search page in our <span <span class= "command">urls.py</span>.</p>
+          <div class="code content">
+            <pre class="content">  <i># shop/urls.py</i>
+
+  from django.contrib import admin
+  from views import <b>HomePage</b>, <b>SearchPage</b>  #new
+
+  urlpatterns = [
+      path('admin/', admin.site.urls),
+      path('search/', views.SearchPage, name='search_result'),
+      path('', views.HomePage, name='home'),
+  ]
+
+  </pre>
+          </div>
+          <p>As you can see here, we have imported the <span>HomePage</span> and <span>SearchPage</span> from the <span class= "command">views.py</span> list in our <span class= "command">urls.py</span>. here you have to start your server ones again with <span class= "command">python manage.py runserver</span> and you can see that there is no problem in your coding.</p>
+          <h3 style="padding-left:3px; border-left: 2px solid red; font-weight: 500;">settings.py</h3>
+          <p>Now we need a home page and search page, so to create it, we create a folder called <span class= "command">templates</span> inside the product app. we also need to update our <span class= "command">settings.py</span> to tell Django to look for this project-level templates folder.</p>
+          <div class="code content">
+            <pre class="content">  <i># shop/settings.py</i>
+  TEMPLATES = [
+      {
+          ...
+          'DIRS': [<span>os.path.join(BASE_DIR, 'templates'</span>)], # new
+          ...
+      }
+  ]</pre>
+          </div>
+          <p>Now we can make home page and search page.</p>
+          <hr class="my-2">
+        </div>
+        <div class="info">
+          <h3  style="padding-left:3px; border-left: 2px solid red; font-weight: 500;">Home page</h3>
+          <p class="content"></p>
+          <p>Now we will make the home page. In the template folder, we will create an HTML file with the name of a <span class= "command">home page</span>. In this page we will create a title using tag h1.</p>
+          <div class="code content">
+            <pre class="content">  <i># templates/home page.html</i>
+    &#60body&#62
+
+        <span>&#60h1&#62</span>Online Shop<span>&#60/h1&#62</span>
+
+    &#60/body&#62
+            </pre>
+          </div><br>
+          <p>here you have to start your server ones again with <span class= "command">python manage.py runserver</span> and Open this <a href="http://127.0.0.1:8">http://127.0.0.1:8</a> link in your web browser</p>
+          <img class="image" src="{% static 'image/article/programing/search bar/4.png'%}" alt="">
+          <hr class="my-2">
+        </div>
+        <div class="info">
+          <h3  style="padding-left:3px; border-left: 2px solid red; font-weight: 500;">Forms</h3>
+          <p class="content"></p>
+          <p>You need to know about the <span>form</span> before adding the search bar to the home page. The basic function of a web-form is that it takes data from the user and sends it to a URL via either a <span>POST</span> or <span>GET</span> method.</p>
+          <p></p>
+          <p></p>
+        </div>
+        <div class="info">
+          <h3  style="padding-left:3px; border-left: 2px solid red; font-weight: 500;">Adding search bar in home page.</h3>
+          <p class="content"></p>
+          <p>To keep it simple, we are not using CSS for styling. We aim to make you understand the concept of this search bar. to create a search bar we are using form tag.</p>
+          <div class="code content">
+            <pre class="content">  <i># templates/home page.html</i>
+    &#60body&#62
+
+        &#60<span>h1</span>&#62Online Shop&#60/<span>h1</span>&#62
+        &#60<span>form</span> action="&#123% url 'search_result' %&#125" method="get"&#62
+          &#60input name="query" type="text" placeholder="Search here.." &#62
+          &#60button type="submit" name="button"&#62Submit&#60/button&#62
+        &#60<span>/form</span>&#62
+
+    &#60/body&#62
+            </pre>
+          </div><br>
+          <p>In the form tag, we are using <span>action</span> and <span>method</span> attributes. The action attribute in the form will redirect the user to another page by clicking on the submit button. We are using the URL name for our search results page here. Then we specify the use of get as our method.</p>
+          <p>Here you have to start your server ones again with <span class= "command">python manage.py runserver</span> and Open this <a href="http://127.0.0.1:8">http://127.0.0.1:8</a> link in your web browser.</p>
+          <img class="image" src="{% static 'image/article/programing/search bar/5.png'%}" alt="">
+          <p>If you do some search now, then it will not show anything because we have not yet created a search page.</p>
+          <hr class="my-2">
+        </div>
+        <div class="info">
+          <h3  style="padding-left:3px; border-left: 2px solid red; font-weight: 500;">search page</h3>
+          <p class="content"></p>
+          <p>Now we will make the <span class= "command">search page</span>. In the template folder, we will create an HTML file with the name of a search page.</p>
+          <div class="code content">
+            <pre class="content">  <i># templates/search page.html</i>
+    &#60body&#62
+
+        &#60<span>h1</span>&#62Search Result&#60/<span>h1</span>&#62
+        &#60ul&#62
+            &#123% for product in products %&#125
+            &#60li&#62
+              &#123&#123 product.name &#125&#125, &#123&#123 product.price &#125&#125
+            &#60/li&#62
+            &#123% endfor %&#125
+        &#60/ul&#62
+
+    &#60/body&#62
+            </pre>
+          </div><br>
+          <p>We have fully completed this project. You can check the server to see if your engine is working or not. I am searching realme 6 in my search bar. it will show all the results from the realme will show you.</p>
+          <img class="image" src="{% static 'image/article/programing/search bar/6.png'%}" alt="">
+          Here it will show all the results related to realme 6.
+          <img class="image" src="{% static 'image/article/programing/search bar/7.png'%}" alt="">
+          <p>I hope you got all the answers from this article "<b>how to add search bar in Django</b>". if have any problem regarding the code please comment below I will reply to you as soon as possible. if don't know how to create a virtual environment <a href="#">click here</a>.</p>
+          <hr class="my-2">
+        </div>
+      </div>
+    </div>
+  {% endblock content%}

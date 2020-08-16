@@ -12,8 +12,6 @@ urlpatterns = [
     path('sitemap.xml', sitemap, {'sitemaps': sitemaps}),
     path("", views.home, name= 'home'),
     path("mobile", views.mob, name='mobile'),
-    # path("laptop", views.laptop, name='laptop'),
-    # path("music", views.music, name='music'),
     path("article", views.article, name='article'),
     path("about", views.about, name='about'),
     path("search", views.search, name='search'),
@@ -30,6 +28,7 @@ urlpatterns = [
     # programing
     path("programing/top-10-Best-backend-framework", views.top_10_framework, name='toptenframework'),
     path("programing/How-to-create-python-virtual-Environment", views.python_venv, name='pythonVenv'),
+    path("programing/search-bar-in-django", views.search_bar, name='searchbar'),
 
     # technology
     path("technology/upcoming-mobile-phone", views.upcoming_mobile, name='upcomingMobile'),
