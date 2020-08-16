@@ -1,40 +1,37 @@
 {% extends 'page/bas.html' %}
 {% block desc%}<meta name="description" content="In this article, we are going to learn how to add a search bar on your website using the Django web framework. if don't know about the Django web framework click here."> {% endblock desc%}
 {% block key%}<meta name="keywords" content="How to add a search bar in Django, search bar in Django"> {% endblock key%}
+{% block script %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.hipein.com/programing/search-bar-in-django"
+  },
+  "headline": "How to add a search bar in Django site",
+  "description": "earn how to add a search bar on your website using the Django web framework in 30 minutes.",
+  "image": "https://www.hipein.com/static/image/article/programing/search%20bar/info%20django.jpg",
+  "author": {
+    "@type": "Person",
+    "name": "Rohit Raj"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "hipein.com",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.hipein.com/static/image/logo/logo.png"
+    }
+  },
+  "datePublished": "2020-08-16"
+}
+</script>
+{% endblock script %}
     {% block style %}
     <style>
-      pre{
-        font-family: sans-serif ;
-        font-size: 16px;
-      }
-      p{
-        font-family: sans-serif ;
-        font-size: 16px;
-      }
-      .code{
-        background: #E8E8E8;
-        border: 1px solid #E8E8E8;
-        border-radius: 5px;
-        margin-bottom: 5px;
-      }
-      .code p{
-        margin: 4px 10px;
-      }
-      .command{
-        border: 1px solid gray;
-        border-radius: 4px;
-        padding: 2px;
-        background: #fafafa;
-        color: gray;
-      }
-      @media (max-width: 768px){
-        p{
-          font-size: 19px;
-        }
-        footer p{
-          font-size: 16px;
-        }
-      }
+      pre{font-family: sans-serif ;font-size: 16px;}p{font-family: sans-serif ;font-size: 16px;}#comments{width: 100%;}.code{background: #E8E8E8;border: 1px solid #E8E8E8;border-radius: 5px;margin-bottom: 5px;}.code p{margin: 4px 10px;}.command{border: 1px solid gray;border-radius: 4px;padding: 2px;background: #fafafa;color: gray;}@media (max-width: 768px){p{font-size: 19px;}footer p{font-size: 14px;}}
     </style>
     {% endblock style %}
     {% load static %}
@@ -281,7 +278,7 @@
           <img class="image" src="{% static 'image/article/programing/search bar/7.png'%}" alt="">
           <p>I hope you got all the answers from this article "<b>how to add search bar in Django</b>". if have any problem regarding the code please comment below I will reply to you as soon as possible. if don't know how to create a virtual environment <a href="#">click here</a>.</p>
           <hr class="my-2">
-          <div class="fb-comments" data-href="https://www.hipein.com/programing/search-bar-in-django" data-numposts="5" data-width=""></div>
+          <div class="fb-comments" id="comments" data-href="https://www.hipein.com/programing/search-bar-in-django" data-numposts="5" data-width=""></div>
         </div>
       </div>
     </div>
