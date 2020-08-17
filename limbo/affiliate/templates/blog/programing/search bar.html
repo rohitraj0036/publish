@@ -211,9 +211,9 @@
           <p>Now we will make the home page. In the template folder, we will create an HTML file with the name of a <span class= "command">home page</span>. In this page we will create a title using tag h1.</p>
           <div class="code content">
             <pre class="content"><code><i># templates/home page.html</i>
-  &#60body&#62
-    <span>&#60h1&#62</span>Online Shop<span>&#60/h1&#62</span>
-  &#60/body&#62
+  &;#60body&;#62
+    <span>&;#60h1&;#62</span>Online Shop<span>&;#60/h1&;#62</span>
+  &;#60/body&;#62
             </code></pre>
           </div><br>
           <p>here you have to start your server ones again with <span class= "command">python manage.py runserver</span> and Open this <a href="http://127.0.0.1:8">http://127.0.0.1:8</a> link in your web browser</p>
@@ -233,13 +233,13 @@
           <p>To keep it simple, we are not using CSS for styling. We aim to make you understand the concept of this search bar. to create a search bar we are using form tag.</p>
           <div class="code content">
             <pre class="content"><code><i># templates/home page.html</i>
- &#60body&#62
-    &#60<span>h1</span>&#62Online Shop&#60/<span>h1</span>&#62
-    &#60<span>form</span> action="&#123% url 'search_result' %&#125" method="get"&#62
-      &#60input name="query" type="text" placeholder="Search here.." &#62
-      &#60button type="submit" name="button"&#62Submit&#60/button&#62
-    &#60<span>/form</span>&#62
- &#60/body&#62
+ &;#60body&;#62
+    &;#60<span>h1</span>&;#62Online Shop&;#60/<span>h1</span>&;#62
+    &;#60<span>form</span> action="&;#123% url 'search_result' %&;#125" method="get"&;#62
+      &;#60input name="query" type="text" placeholder="Search here.." &;#62
+      &;#60button type="submit" name="button"&;#62Submit&;#60/button&;#62
+    &;#60<span>/form</span>&;#62
+ &;#60/body&;#62
             </code></pre>
           </div><br>
           <p>In the form tag, we are using <span>action</span> and <span>method</span> attributes. The action attribute in the form will redirect the user to another page by clicking on the submit button. We are using the URL name for our search results page here. Then we specify the use of get as our method.</p>
@@ -254,17 +254,17 @@
           <p>Now we will make the <span class= "command">search page</span>. In the template folder, we will create an HTML file with the name of a search page.</p>
           <div class="code content">
             <pre class="content"><code><i># templates/search page.html</i>
- &#60body&#62
-    &#60<span>h1</span>&#62Search Result&#60/<span>h1</span>&#62
-    &#60ul&#62
-        &#123% for product in products %&#125
-        &#60li&#62
-          &#123&#123 product.name &#125&#125, &#123&#123 product.price &#125&#125
-        &#60/li&#62
-        &#123% endfor %&#125
-    &#60/ul&#62
+ &;#60body&;#62
+    &;#60<span>h1</span>&;#62Search Result&;#60/<span>h1</span>&;#62
+    &;#60ul&;#62
+        &;#123% for product in products %&;#125
+        &;#60li&;#62
+          &;#123&;#123 product.name &;#125&;#125, &;#123&;#123 product.price &;#125&;#125
+        &;#60/li&;#62
+        &;#123% endfor %&;#125
+    &;#60/ul&;#62
 
-  &#60/body&#62
+  &;#60/body&;#62
             </code></pre>
           </div><br>
           <p>We have fully completed this project. You can check the server to see if your engine is working or not. I am searching realme 6 in my search bar. it will show all the results from the realme will show you.</p>
