@@ -51,7 +51,7 @@ def battery(request):
     return render(request, "blog/battery/battery.html")
 
 def non_chinese_mobile(request):
-    return render(request, "blog/mobile/1/1.html")
+    return render(request, "blog/mobile/non-chinese-mobile/non-chinese-mobile.html")
 
 # programing
 def top_10_framework(request):
