@@ -50,6 +50,9 @@ def iphone_12_blog(request):
 def battery(request):
     return render(request, "blog/battery/battery.html")
 
+def non_chinese_mobile(request):
+    return render(request, "blog/mobile/non chinese mobile/non-chinese-mobile.html")
+
 # programing
 def top_10_framework(request):
     return render(request, "blog/programing/top-10-framework.html")
