@@ -10,8 +10,8 @@ def home(request):
 def mob(request):
     return render(request, 'page/mobile_page.html')
 
-# def music(request):
-#     return render(request, 'page/music_page.html')
+def contact_us(request):
+    return render(request, 'page/contact us.html')
 
 def article(request):
     return render(request, 'page/article_page.html')

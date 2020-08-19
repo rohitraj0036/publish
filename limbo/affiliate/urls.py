@@ -14,6 +14,7 @@ urlpatterns = [
     path("mobile", views.mob, name='mobile'),
     path("article", views.article, name='article'),
     path("about", views.about, name='about'),
+    path("contact-us", views.contact_us, name='contactus'),
     path("search", views.search, name='search'),
 
 
