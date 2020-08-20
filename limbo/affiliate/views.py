@@ -13,6 +13,9 @@ def mob(request):
 def contact_us(request):
     return render(request, 'page/contact us.html')
 
+def privacy_policy(request):
+    return render(request, 'page/privacy&policy.html')
+
 def article(request):
     return render(request, 'page/article_page.html')
 
