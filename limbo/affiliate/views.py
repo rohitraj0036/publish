@@ -153,6 +153,9 @@ def poco_c3(request):
 def mi_note_10(request):
     return  render(request, "mobile/mi/redmi note 10/redmi-note-10.html")
 
+def poco_m2_pro(request):
+    return  render(request, "mobile/mi/poco m2 pro/poco m2 pro.html")
+
 # oneplus page
 def oneplus(request):
     return render(request, "mobile/oneplus/oneplus_page/OnePlus .html")
