@@ -33,6 +33,9 @@ urlpatterns = [
     path("programing/How-to-create-python-virtual-Environment", views.python_venv, name='pythonVenv'),
     path("programing/search-bar-in-django", views.search_bar, name='searchbar'),
 
+    # game
+    path("game/how-to-get-free-uc", views.free_uc, name='freeuc'),
+
     # technology
     path("technology/upcoming-mobile-phone", views.upcoming_mobile, name='upcomingMobile'),
     path("technology/add-me-to-search", views.add_me_to_search, name='addmetosearch'),

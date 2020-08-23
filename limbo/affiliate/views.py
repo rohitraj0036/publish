@@ -73,6 +73,10 @@ def upcoming_mobile(request):
 def add_me_to_search(request):
     return render(request, "blog/technology/add-me-to-search.html")
 
+# game
+def free_uc(request):
+    return render(request, "blog/game/free uc/free uc.html")
+
 # app
 def filmorago(request):
     return render(request, "blog/apps/filmorago/filmorago.html")
