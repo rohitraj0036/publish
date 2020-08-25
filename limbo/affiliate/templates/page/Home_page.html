@@ -30,6 +30,15 @@
         color: white;
         font-weight: 700;
       }
+      .image-text1{
+        position: absolute;
+        top: 45%;
+        left: 6px;
+      }
+      .image-text1 h4{
+        color: white;
+        font-weight: 700;
+      }
       span{
         color: red;
       }
@@ -39,6 +48,13 @@
       }
       .card a:hover{
         color: red;
+      }
+      .card-text1{
+        padding: 5px;
+      }
+      .bottom-left {
+        position: absolute;
+        top: 99%;
       }
       @media (max-width: 1200px){
         .carousel-item img{
@@ -126,41 +142,41 @@
     <!-- content -->
     <div class="card-group">
       <div class="card">
-        <img src="{% static 'image/article/mobile/upcoming mobile/poco-c3.jpg'%}" class="card-img-top" alt="...">
+        <a href="{% url 'pococ3' %}"><img src="{% static 'image/article/mobile/upcoming mobile/poco-c3.jpg'%}" class="card-img-top" alt="...">
         <div class="image-text">
           <h4><span>REVIEW</span> POCO C3 : 3/32GB  Watch Full review.</h4>
-        </div>
+        </div></a>
         <div class="card-body card-body1">
           <ul>
-            <li><a href="#"><p class="card-text"><b>What can be the price of POCO C3 in India?</b></p></a></li>
-            <li><a href="#"><p class="card-text"><b>When can POCO C3 be released in India?</b></p></a></li>
-            <li><a href="#"><p class="card-text"><b>Full specification</b></p></a></li>
+            <li><a href="{% url 'pococ3' %}"><p class="card-text"><b>What can be the price of POCO C3 in India?</b></p></a></li>
+            <li><a href="{% url 'pococ3' %}"><p class="card-text"><b>When can POCO C3 be released in India?</b></p></a></li>
+            <li><a href="{% url 'pococ3' %}"><p class="card-text"><b>Full specification</b></p></a></li>
           </ul>
         </div>
       </div>
       <div class="card">
-        <img src="{% static 'image/mobile/oneplus/oneplus-nord-2.jpg' %}" class="card-img-top" alt="...">
+        <a href="{% url 'OnePlus_nord' %}"><img src="{% static 'image/mobile/oneplus/oneplus-nord-2.jpg' %}" class="card-img-top" alt="...">
         <div class="image-text">
           <h4><span>REVIEW</span> onePlus nord 5G : 6/64GB Watch Full review</h4>
-        </div>
+        </div></a>
         <div class="card-body card-body1">
           <ul>
-            <li><a href="#"><p class="card-text"><b>What can be the price of onePlus nord in India?</b></p></a></li>
-            <li><a href="#"><p class="card-text"><b>When can onePlus nord be released in India?</b></p></a></li>
-            <li><a href="#"><p class="card-text"><b>Full specification</b></p></a></li>
+            <li><a href="{% url 'OnePlus_nord' %}"><p class="card-text"><b>What can be the price of onePlus nord in India?</b></p></a></li>
+            <li><a href="{% url 'OnePlus_nord' %}"><p class="card-text"><b>When can onePlus nord be released in India?</b></p></a></li>
+            <li><a href="{% url 'OnePlus_nord' %}"><p class="card-text"><b>Full specification</b></p></a></li>
           </ul>
         </div>
       </div>
       <div class="card">
-        <img src="{% static 'image/article/mobile/upcoming mobile/samsung-galaxy-note-20-ultra.jpg'%}"  class="card-img-top" alt="...">
+        <a href="{% url 'note20ultra' %}"><img src="{% static 'image/article/mobile/upcoming mobile/samsung-galaxy-note-20-ultra.jpg'%}"  class="card-img-top" alt="...">
         <div class="image-text">
           <h4><span>REVIEW</span> Samsung Galaxy Note 20 ultra : 8/256GB Watch Full review</h4>
-        </div>
+        </div></a>
         <div class="card-body card-body1">
           <ul>
-            <li><a href="#"><p class="card-text"><b>What can be the price of POCO C3 in India?</b></p></a></li>
-            <li><a href="#"><p class="card-text"><b>When can POCO C3 be released in India?</b></p></a></li>
-            <li><a href="#"><p class="card-text"><b>Full specification</b></p></a></li>
+            <li><a href="{% url 'note20ultra' %}"><p class="card-text"><b>What can be the price of Note 20 ultra in India?</b></p></a></li>
+            <li><a href="{% url 'note20ultra' %}"><p class="card-text"><b>When can Note 20 ultra be released in India?</b></p></a></li>
+            <li><a href="{% url 'note20ultra' %}"><p class="card-text"><b>Full specification</b></p></a></li>
           </ul>
         </div>
       </div>
@@ -170,23 +186,29 @@
     </div>
     <div class="card-group">
       <div class="card">
-        <img src="{% static 'image/article/apps/game/game-mobile.jpg'%}" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Top 10 best android games for free in 2020</h5>
+        <a href="{% url 'androidgame' %}"><img src="{% static 'image/article/apps/game/game-mobile.jpg'%}" class="card-img-top" alt="...">
+        <div class="image-text">
+          <h4>Top 10 best <span>android games</span> for free in 2020</h4>
+        </div></a>
+        <div class="card-body card-text1">
           <p class="card-text">Everybody likes to play mobile games in the 20th century,  whether they are children or  youngsters we all love to play mobile games in our free time. As technology is increasing, the experience of playing mobile games is also increasing.</p>
         </div>
       </div>
       <div class="card">
-        <img src="{% static 'image/article/apps/filmorago/filmorago.jpg'%}" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">FilmoraGo - Best video editing app in 2020</h5>
+        <a href="{% url 'filmorago' %}"><img src="{% static 'image/article/apps/filmorago/filmorago.jpg'%}" class="card-img-top" alt="...">
+        <div class="image-text">
+          <h4><span>FilmoraGo</span>- Best video editing app in 2020</h4>
+        </div></a>
+        <div class="card-body card-text1">
           <p class="card-text">It is very easy to use. flimorago is the best video editing app in 2020 with advanced features. It has more than 50 million downloads and nearly 417k user reviews according to the google play store.</p>
         </div>
       </div>
       <div class="card">
-        <img src="{% static 'image/mobile/pubg/PUBG-mobile.jpg'%}"  class="card-img-top" alt="...">
+        <a href="{% url 'searchbar' %}"><img src="{% static 'image/mobile/pubg/PUBG-mobile.jpg'%}"  class="card-img-top" alt="...">
+        <div class="image-text card-text1">
+          <h4>How to add a search bar in <span>Django</span> site</h4>
+        </div></a>
         <div class="card-body">
-          <h5 class="card-title">How to add a search bar in Django site</h5>
           <p class="card-text">In this article, we are going to learn how to add a search bar on your website using the Django web framework. if don't know about the Django web framework <a href="https://docs.djangoproject.com/en/3.0/">click here</a>.</p>
         </div>
       </div>
