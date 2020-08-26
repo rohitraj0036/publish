@@ -13,6 +13,7 @@
       }
       .card-img-top{
         border-radius: 5px;
+        filter: brightness(0.7);
       }
       .card-group a{
         text-decoration: none;
@@ -23,7 +24,7 @@
       }
       .image-text{
         position: absolute;
-        top: 36%;
+        top: 52%;
         left: 6px;
       }
       .image-text h4{
@@ -56,6 +57,21 @@
         position: absolute;
         top: 99%;
       }
+      @media (max-width: 1500px){
+
+        .image-text{
+        position: absolute;
+        top: 40%;
+        left: 6px;
+        }
+        .image-text1{
+        position: absolute;
+        top: 42%;
+        left: 6px;
+       }
+
+
+      }
       @media (max-width: 1200px){
         .carousel-item img{
           height: 400px;
@@ -66,6 +82,16 @@
           margin-bottom: 30px;
           text-decoration: none;
         }
+        .image-text{
+        position: absolute;
+        top: 40%;
+        left: 6px;
+        }
+        .image-text1{
+        position: absolute;
+        top: 42%;
+        left: 6px;
+       }
       }
       @media (max-width: 768px){
         .carousel-item img{
@@ -75,7 +101,20 @@
           width: 100%;
           margin-left: 0px;
         }
+        .card-body ul{
+          font-size: 15px;
+        }
+        .image-text{
+        position: absolute;
+        top: 49%;
+        left: 6px;
+        }
+        .image-text1{
+        position: absolute;
+        top: 46%;
+        left: 6px;
        }
+      }
     </style>
     {% endblock style %}
     {% block title%}hipein.com - mobile phone review and specification |article  {% endblock title%}
@@ -138,7 +177,7 @@
     <div class="card-group">
       <div class="card">
         <a href="{% url 'pococ3' %}"><img src="{% static 'image/article/mobile/upcoming mobile/poco-c3.jpg'%}" class="card-img-top" alt="...">
-        <div class="image-text1">
+        <div class="image-text">
           <h4><span>REVIEW</span> POCO C3 : 3/32GB  Watch Full review.</h4>
         </div></a>
         <div class="card-body card-body1">
@@ -151,7 +190,7 @@
       </div>
       <div class="card">
         <a href="{% url 'OnePlus_nord' %}"><img src="{% static 'image/mobile/oneplus/oneplus-nord-2.jpg' %}" class="card-img-top" alt="...">
-        <div class="image-text1">
+        <div class="image-text">
           <h4><span>REVIEW</span> onePlus nord 5G : 6/64GB Watch Full review</h4>
         </div></a>
         <div class="card-body card-body1">
@@ -165,8 +204,8 @@
       </div>
       <div class="card">
         <a href="{% url 'note20ultra' %}"><img src="{% static 'image/article/mobile/upcoming mobile/samsung-galaxy-note-20-ultra.jpg'%}"  class="card-img-top" alt="...">
-        <div class="image-text1">
-          <h4><span>REVIEW</span> Samsung Galaxy Note 20 ultra : 8/256GB Watch Full review</h4>
+        <div class="image-text">
+          <h4><span>REVIEW</span> Galaxy Note 20 ultra : 8/256GB Watch Full review</h4>
         </div></a>
         <div class="card-body card-body1">
           <ul>

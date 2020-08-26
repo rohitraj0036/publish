@@ -279,12 +279,9 @@ footer{
     .card-group{
       width: 100%;
       margin-left: 0px;
+      margin-bottom: 40px;
     }
-    .image-text {
-      position: absolute;
-      top: 56%;
-      left: 6px;
-    }
+
 
     /* quick links */
     .quick-link{
