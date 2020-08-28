@@ -62,6 +62,7 @@ urlpatterns = [
     path("mobile/Xiaomi-poco-c3", views.poco_c3, name='pococ3'),
     path("mobile/Xiaomi-Mi-Note-10", views.mi_note_10, name='minote10'),
     path("mobile/poco-m2-pro", views.poco_m2_pro, name='pocom2pro'),
+    path("mobile/poco-x3", views.poco_x3, name='pocox3'),
 
 
     # oneplus page links
@@ -91,7 +92,7 @@ urlpatterns = [
     path("mobile/realme-C3", views.realme_C3, name='realmeC3'),
     path("mobile/realme-C11", views.realme_C11, name='realmeC11'),
     path("mobile/realme-C15", views.realme_C15, name='realmeC15'),
-    path("mobile/realme-7-pro", views.realme_7_pro, name='realme7pro'), 
+    path("mobile/realme-7-pro", views.realme_7_pro, name='realme7pro'),
 
 
     #  samsung page
