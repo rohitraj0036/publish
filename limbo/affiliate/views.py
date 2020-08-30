@@ -84,6 +84,9 @@ def filmorago(request):
 def android_game(request):
     return render(request, "blog/apps/game/top-10-android-game.html")
 
+def air_scanner(request):
+    return render(request, "blog/apps/air scanner/air-scanner.html")
+
 # mi moblie page
 def redmi(request):
     return render(request, "mobile/mi/mi_page/mi_page.html")
