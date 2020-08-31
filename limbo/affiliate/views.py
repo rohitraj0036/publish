@@ -298,8 +298,12 @@ def realme_C11(request):
 
 def realme_C15(request):
     return render(request,"mobile/realme/realme c15/realme-c15.html")
+
 def realme_7_pro(request):
     return render(request,"mobile/realme/realme 7 pro/realme-7-pro.html")
+
+def realme_7(request):
+    return render(request,"mobile/realme/realme 7/realme-7.html")
 
 # samsung pages
 def samsung(request):
