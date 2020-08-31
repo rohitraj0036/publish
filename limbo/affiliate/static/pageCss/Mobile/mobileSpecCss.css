@@ -197,6 +197,9 @@ footer{
   color: #eee;
   position: relative;
 }
+footer p{
+  font-size: 15px;
+}
 .footer_info{
   flex: 1;
   padding: 10px;
