@@ -9,7 +9,7 @@ sitemaps ={
 }
 
 urlpatterns = [
-    path('ads.txt', AdsView.as_view()),
+    path('ads.txt', views.AdsView),
     path('sitemap.xml', sitemap, {'sitemaps': sitemaps}),
     path("", views.home, name= 'home'),
     path("mobile", views.mob, name='mobile'),
