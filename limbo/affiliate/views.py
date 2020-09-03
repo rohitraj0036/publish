@@ -202,7 +202,7 @@ def oneplus_nord(request):
     return render(request, "mobile/oneplus/oneplus_nord/oneplus nord.html")
 
 def oneplus_8t(request):
-    return render(request, "mobile/oneplus/oneplus 8t/OnePlus-8t.html", context=price)
+    return render(request, "mobile/oneplus/oneplus 8t/OnePlus-8t.html")
 
 
 
