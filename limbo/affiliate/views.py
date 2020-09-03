@@ -175,58 +175,34 @@ def oneplus(request):
     return render(request, "mobile/oneplus/oneplus_page/OnePlus .html")
 
 def oneplus_3T(request):
-    product_price = '16,999'
-    product_name = 'OnePlus 3T'
-    price = {'product':product_price, 'product_name':product_name}
-    return render(request, "mobile/oneplus/oneplus 3T/OnePlus_3T.html", context=price)
+    return render(request, "mobile/oneplus/oneplus 3T/OnePlus_3T.html")
 
 def oneplus_5(request):
-    product_price = '16,999'
-    product_name = 'OnePlus 5'
-    price = {'product':product_price, 'product_name':product_name}
-    return render(request, "mobile/oneplus/oneplus 5/OnePlus_5.html", context=price)
+    return render(request, "mobile/oneplus/oneplus 5/OnePlus_5.html")
 
 def oneplus_6T(request):
-    product_price = '16,999'
-    product_name = 'OnePlus 6T'
-    price = {'product':product_price, 'product_name':product_name}
-    return render(request, "mobile/oneplus/oneplus 6T/OnePlus_6T.html", context=price)
+    return render(request, "mobile/oneplus/oneplus 6T/OnePlus_6T.html")
 
 def oneplus_7(request):
-    product_price = '16,999'
-    product_name = 'OnePlus 7'
-    price = {'product':product_price, 'product_name':product_name}
-    return render(request, "mobile/oneplus/oneplus 7/OnePlus_7.html", context=price)
+    return render(request, "mobile/oneplus/oneplus 7/OnePlus_7.html")
 
 def oneplus_7T(request):
-    product_price = '16,999'
-    product_name = 'OnePlus 7T'
-    price = {'product':product_price, 'product_name':product_name}
-    return render(request, "mobile/oneplus/oneplus 7T/OnePlus_7T.html", context=price)
+    return render(request, "mobile/oneplus/oneplus 7T/OnePlus_7T.html")
 
 def oneplus_7T_pro(request):
-    product_price = '16,999'
-    product_name = 'OnePlus 7T pro'
-    price = {'product':product_price, 'product_name':product_name}
-    return render(request, "mobile/oneplus/oneplus 7T pro/OnePlus_7T_Pro.html", context=price)
+    return render(request, "mobile/oneplus/oneplus 7T pro/OnePlus_7T_Pro.html")
 
 def oneplus_8(request):
-    product_price = '16,999'
-    product_name = 'OnePlus 8'
-    price = {'product':product_price, 'product_name':product_name}
-    return render(request, "mobile/oneplus/oneplus 8/OnePlus_8.html", context=price)
+    return render(request, "mobile/oneplus/oneplus 8/OnePlus_8.html")
 
 def oneplus_8_pro(request):
-    product_price = '16,999'
-    product_name = 'OnePlus 8 Pro'
-    price = {'product':product_price, 'product_name':product_name}
-    return render(request, "mobile/oneplus/oneplus 8pro/OnePlus_8_Pro.html", context=price)
+    return render(request, "mobile/oneplus/oneplus 8pro/OnePlus_8_Pro.html")
 
 def oneplus_nord(request):
-    product_price = '24,999'
-    product_name = 'OnePlus nord'
-    price = {'product':product_price, 'product_name':product_name}
-    return render(request, "mobile/oneplus/oneplus_nord/oneplus nord.html", context=price)
+    return render(request, "mobile/oneplus/oneplus_nord/oneplus nord.html")
+
+def oneplus_8t(request):
+    return render(request, "mobile/oneplus/oneplus 8t/OnePlus-8t.html", context=price)
 
 
 
