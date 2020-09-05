@@ -81,6 +81,9 @@ def add_me_to_search(request):
 def free_uc(request):
     return render(request, "blog/game/free uc/free uc.html")
 
+def FAUG(request):
+    return render(request, "blog/game/FAUG/FAUG.html")
+
 # app
 def filmorago(request):
     return render(request, "blog/apps/filmorago/filmorago.html")
