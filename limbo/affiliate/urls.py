@@ -2,6 +2,7 @@ from django.urls import path
 from. import views
 from .sitemaps import product_sitemap , article_sitemap
 from django.contrib.sitemaps.views import sitemap
+from .views import AdsView
 
 sitemaps ={
     'article': article_sitemap,

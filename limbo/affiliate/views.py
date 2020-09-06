@@ -5,10 +5,9 @@ from django.http import HttpResponse
 
 
 # Create your views here.
-
 class AdsView(View):
     def get(self, request, *args, **kwargs):
-        return HttpResponse("google.com, pub-0000000000000000, DIRECT, f08c47fec0942fa0")
+        return HttpResponse( "google.com, pub-5452473448420018, DIRECT, f08c47fec0942fa0")
 
 def home(request):
     return render(request, 'page/Home_page.html')
