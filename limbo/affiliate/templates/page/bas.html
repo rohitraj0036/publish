@@ -20,6 +20,15 @@
 
       gtag('config', 'UA-174458117-2');
     </script>
+    <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+    <script>
+      window.OneSignal = window.OneSignal || [];
+      OneSignal.push(function() {
+        OneSignal.init({
+          appId: "84352b0b-5a13-43be-9c96-42508f28dcdd",
+        });
+      });
+    </script>
     {% load static%}
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="{% static 'pageCss/Mobile/mobileSpecCss.css' %}">
