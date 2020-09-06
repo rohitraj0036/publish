@@ -9,7 +9,7 @@ sitemaps ={
 }
 
 urlpatterns = [
-    path('ads.txt', views.AdsView),
+    path('ads.txt', AdsView.as_view()),
     path('sitemap.xml', sitemap, {'sitemaps': sitemaps}),
     path("", views.home, name= 'home'),
     path("mobile", views.mob, name='mobile'),
@@ -136,5 +136,21 @@ urlpatterns = [
     path("mobile/vivo-Y15", views.vivo_y15, name='vivoY15'),
     path("mobile/vivo-Y50", views.vivo_y50, name='vivoY50'),
     path("mobile/vivo-Z1pro", views.vivo_z1pro, name='vivoZ1pro'),
-    path("mobile/vivo-Z1x", views.vivo_z1x, name='vivoZ1X')
+    path("mobile/vivo-Z1x", views.vivo_z1x, name='vivoZ1X'),
+    path(
+       "OneSignalSDKWorker.js",
+       TemplateView.as_view(
+           template_name="OneSignal/OneSignalSDKWorker.js",
+           content_type="application/javascript"
+       ),
+       name="OneSignalSDKWorker.js",
+    ),
+    path(
+       "OneSignalSDKupdaterWorker.js",
+       TemplateView.as_view(
+           template_name="OneSignal/OneSignalSDKupdaterWorker.js",
+           content_type="application/javascript"
+       ),
+       name="OneSignalSDKupdaterWorker.js",
+    )
 ]
