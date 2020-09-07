@@ -215,70 +215,37 @@ def _realme_(request):
     return  render(request, "mobile/realme/realme_page/realme_page.html")
 
 def X50_pro(request):
-    product_price = '16,999'
-    product_name = 'Realme X50'
-    price = {'product':product_price, 'product_name':product_name}
-    return render(request, "mobile/realme/realme X50 pro/realme X50 pro.html", context=price)
+    return render(request, "mobile/realme/realme X50 pro/realme X50 pro.html")
 
 def narzo(request):
-    product_price = '16,999'
-    product_name = 'Realme Narzo'
-    price = {'product':product_price, 'product_name':product_name}
-    return render(request, "mobile/realme/realme narzo/realme narzo.html", context=price)
+    return render(request, "mobile/realme/realme narzo/realme narzo.html")
 
 def realme_x2(request):
-    product_price = '16,999'
-    product_name = 'Realme X2'
-    price = {'product':product_price, 'product_name':product_name}
-    return render(request, "mobile/realme/realme X2/realme X2.html", context=price)
+    return render(request, "mobile/realme/realme X2/realme X2.html")
 
 def realme_X2_pro(request):
-    product_price = '16,999'
-    product_name = 'Realme X2 pro'
-    price = {'product':product_price, 'product_name':product_name}
-    return render(request, "mobile/realme/realme X2 pro/realme X2pro.html", context=price)
+    return render(request, "mobile/realme/realme X2 pro/realme X2pro.html")
 
 def realme_XT(request):
-    product_price = '16,999'
-    product_name = 'Realme XT'
-    price = {'product':product_price, 'product_name':product_name}
-    return render(request, "mobile/realme/realme XT/realme XT.html", context=price)
+    return render(request, "mobile/realme/realme XT/realme XT.html")
 
 def realme_5pro(request):
-    product_price = '16,999'
-    product_name = 'Realme 5 pro'
-    price = {'product':product_price, 'product_name':product_name}
-    return render(request,"mobile/realme/realme 5pro/realme 5pro.html", context=price)
+    return render(request,"mobile/realme/realme 5pro/realme 5pro.html")
 
 def realme_5s(request):
-    product_price = '16,999'
-    product_name = 'Realme 5s'
-    price = {'product':product_price, 'product_name':product_name}
-    return render(request,"mobile/realme/realme 5s/realme 5s.html", context=price)
+    return render(request,"mobile/realme/realme 5s/realme 5s.html")
 
 def realme_6(request):
-    product_price = '16,999'
-    product_name = 'Realme 6'
-    price = {'product':product_price, 'product_name':product_name}
-    return render(request,"mobile/realme/realme 6/realme 6.html", context=price)
+    return render(request,"mobile/realme/realme 6/realme 6.html")
 
 def realme_6pro(request):
-    product_price = '16,999'
-    product_name = 'Realme 6 pro'
-    price = {'product':product_price, 'product_name':product_name}
-    return render(request,"mobile/realme/realme 6pro/realme 6pro.html", context=price)
+    return render(request,"mobile/realme/realme 6pro/realme 6pro.html")
 
 def realme_C3(request):
-    product_price = '16,999'
-    product_name = 'Realme C3'
-    price = {'product':product_price, 'product_name':product_name}
-    return render(request,"mobile/realme/realme C3/realme C3.html", context=price)
+    return render(request,"mobile/realme/realme C3/realme C3.html")
 
 def realme_C11(request):
-    product_price = '7,499'
-    product_name = 'Realme C11'
-    price = {'product':product_price, 'product_name':product_name}
-    return render(request,"mobile/realme/realme c11/realme c11.html", context=price)
+    return render(request,"mobile/realme/realme c11/realme c11.html")
 
 def realme_C15(request):
     return render(request,"mobile/realme/realme c15/realme-c15.html")
@@ -288,6 +255,9 @@ def realme_7_pro(request):
 
 def realme_7(request):
     return render(request,"mobile/realme/realme 7/realme-7.html")
+
+def realme_7i(request):
+    return render(request,"mobile/realme/realme 7i/realme-7i.html")
 
 # samsung pages
 def samsung(request):
