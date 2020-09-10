@@ -43,7 +43,7 @@ urlpatterns = [
     # technology
     path("technology/upcoming-mobile-phone", views.upcoming_mobile, name='upcomingMobile'),
     path("technology/add-me-to-search", views.add_me_to_search, name='addmetosearch'),
-
+    path("technology/best-smartwatches-for-men-in-2020", views.smartwatch, name='smartwatch'),
     # apps
     path("apps/filmorago-Best-video-editing-app-in-2020", views.filmorago, name='filmorago'),
     path("apps/best-android-game", views.android_game, name='androidgame'),
