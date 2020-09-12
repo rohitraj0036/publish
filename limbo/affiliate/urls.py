@@ -116,6 +116,7 @@ urlpatterns = [
     path("mobile/samsung-galaxy-s20-ultra", views.s20_ultra, name='s20ultra'),
     path("mobile/samsung-galaxy-s20-plus", views.s20_plus, name='s20plus'),
     path("mobile/samsung-galaxy-z-flip", views.z_flip, name='zflip'),
+    path("mobile/samsung-galaxy-s20-fe", views.s20_fe, name='s20fe'),
 
     # apple page link
     path("mobile/apple", views.apple, name='apple'),
