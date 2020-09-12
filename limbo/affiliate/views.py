@@ -103,64 +103,34 @@ def redmi(request):
     return render(request, "mobile/mi/mi_page/mi_page.html")
 
 def note_9_pro_max(request):
-    product_price = '16,999'
-    product_name = 'Redmi note 9 pro'
-    price = {'product':product_price, 'product_name':product_name}
-    return  render(request, "mobile/mi/note 9pro max/note 9 pro max.html", context=price)
+    return  render(request, "mobile/mi/note 9pro max/note 9 pro max.html")
 
 def redmi_k20(request):
-    product_price = '16,999'
-    product_name = 'Redmi K20'
-    price = {'product':product_price, 'product_name':product_name}
-    return  render(request, "mobile/mi/k20/k20.html", context=price)
+    return  render(request, "mobile/mi/k20/k20.html")
 
 def mi10(request):
-    product_price = '16,999'
-    product_name = 'Redmi MI 10'
-    price = {'product':product_price, 'product_name':product_name}
-    return  render(request, "mobile/mi/mi 10/mi 10.html", context=price)
+    return  render(request, "mobile/mi/mi 10/mi 10.html")
 
 def note_7_pro(request):
-    product_price = '16,999'
-    product_name = 'Redmi note 97pro'
-    price = {'product':product_price, 'product_name':product_name}
-    return  render(request, "mobile/mi/Note 7pro/note 7 pro.html", context=price)
+    return  render(request, "mobile/mi/Note 7pro/note 7 pro.html")
 
 def note_7s(request):
-    product_price = '16,999'
-    product_name = 'Redmi note 7s'
-    price = {'product':product_price, 'product_name':product_name}
-    return  render(request, "mobile/mi/note 7s/note 7s.html", context=price)
+    return  render(request, "mobile/mi/note 7s/note 7s.html")
 
 def note_8(request):
-    product_price = '16,999'
-    product_name = 'Redmi note 8'
-    price = {'product':product_price, 'product_name':product_name}
-    return  render(request, "mobile/mi/note 8/note 8.html", context=price)
+    return  render(request, "mobile/mi/note 8/note 8.html")
 
 def note_8_pro(request):
-    product_price = '16,999'
-    product_name = 'Redmi note 8 pro'
-    price = {'product':product_price, 'product_name':product_name}
-    return  render(request, "mobile/mi/note 8 pro/note 8 pro.html", context=price)
+    return  render(request, "mobile/mi/note 8 pro/note 8 pro.html")
 
 def note_9_pro(request):
-    product_price = '16,999'
-    product_name = 'Redmi note 9 pro'
-    price = {'product':product_price, 'product_name':product_name}
-    return  render(request, "mobile/mi/note 9pro/note 9 pro.html", context=price)
+    return  render(request, "mobile/mi/note 9pro/note 9 pro.html")
 
 def redmi_8(request):
-    product_price = '16,999'
-    product_name = 'Redmi 8'
-    price = {'product':product_price, 'product_name':product_name}
-    return  render(request, "mobile/mi/redmi 8/redmi 8.html", context=price)
+    return  render(request, "mobile/mi/redmi 8/redmi 8.html")
 
 def redmi_8a(request):
-    product_price = '16,999'
-    product_name = 'Redmi 8A'
-    price = {'product':product_price, 'product_name':product_name}
-    return  render(request, "mobile/mi/redmi 8A/redmi 8A.html", context=price)
+    return  render(request, "mobile/mi/redmi 8A/redmi 8A.html")
 
 def poco_f2(request):
     return  render(request, "mobile/mi/poco f2/poco-f2.html")
@@ -177,6 +147,8 @@ def poco_m2_pro(request):
 def poco_x3(request):
     return  render(request, "mobile/mi/poco x3/poco-x3.html")
 
+def mi_10t_pro(request):
+    return  render(request, "mobile/mi/mi 10t pro/mi-10t-pro.html")
 # oneplus page
 def oneplus(request):
     return render(request, "mobile/oneplus/oneplus_page/OnePlus .html")
