@@ -285,6 +285,9 @@ def z_flip(request):
 def s20_fe(request):
     return render(request, "mobile/samsung/samsung s20 fe/samsung-s20-fe.html")
 
+def a52(request):
+    return render(request, "mobile/samsung/a52/a52.html")
+
 # apple page link
 def apple(request):
     return render(request, "mobile/apple/apple_page/apple_page.html")
