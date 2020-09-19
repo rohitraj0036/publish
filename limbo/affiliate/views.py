@@ -98,6 +98,8 @@ def android_game(request):
 def air_scanner(request):
     return render(request, "blog/apps/air scanner/air-scanner.html")
 
+def hipein_app(request):
+    return render(request, "blog/apps/hipein app/hipein-app.html")
 # mi moblie page
 def redmi(request):
     return render(request, "mobile/mi/mi_page/mi_page.html")

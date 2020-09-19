@@ -48,6 +48,7 @@ urlpatterns = [
     path("apps/filmorago-Best-video-editing-app-in-2020", views.filmorago, name='filmorago'),
     path("apps/best-android-game", views.android_game, name='androidgame'),
     path("apps/air-scanner", views.air_scanner, name='airscanner'),
+    path("apps/hipein-app", views.hipein_app, name='hipeinapp'),
 
 
 

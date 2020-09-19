@@ -1,0 +1,78 @@
+{% extends 'page/bas.html' %}
+{% block desc%}<meta name="description" content="If you are a fan of IPL, then you can see the score of IPL anywhere and anytime. All you have to do is download the hipein app "> {% endblock desc%}
+{% block key%}<meta name="keywords" content="IPL live score"> {% endblock key%}
+    {% block style %}
+    <style>
+      pre{
+        font-family: sans-serif ;
+        font-size: 16px;
+      }
+      p{
+        font-family: sans-serif ;
+        font-size: 17px;
+      }
+      .aff-link2{
+          position: absolute;
+          top: 100%;
+          left: 34%;
+        }
+      @media (max-width: 1200px){
+        .aff-link2 {
+          position: absolute;
+          top: 63%;
+          left: 38%;
+        }
+      }
+      @media (max-width: 768px){
+        p{
+          font-size: 19px;
+        }
+        footer p{
+          font-size: 16px;
+        }
+        .aff-link2{
+          top: 81%;
+          left: 10%;
+        }
+      }
+    </style>
+    {% endblock style %}
+    {% load static %}
+    {% block title%}IPL 2020 Live Cricket Scores and Schedules..{% endblock title%}
+    {% block actart%} class="active"{% endblock actart%}
+    {% block content%}
+
+    <!-- review and spec -->
+    <div class="wrapper">
+      <div class="main">
+        <div class="headline2">
+          <h1 class="content_tittle" style="font-weight: 400;" >IPL 2020 Live Cricket Scores and Schedules.</h1>
+          <hr class="my-2">
+          <p>The IPL has started late due to Corona virus. The first match of IPL will be played on 19 September 2020. If you want to see IPL match schedule, <a href="https://www.iplt20.com/matches/schedule/men">click here</a>.</p>
+          <p>If you are a fan of IPL, then you can see the score of IPL anywhere and anytime. All you have to do is download the hipein app <b><span style="color:#00a8ff"><a href="http://www.hipein.com/static/hipein.apk" download>Click here for download</a></span></b>.</p>
+          <style>
+
+          </style>
+          <div class="">
+          <img class="image" src="{% static 'image/article/apps/hipein app/1.jpg'%}" alt="">
+          <p class="content" style="border-bottom: 1px solid #eee;">Image source | twitter uploaded by:  <a href="#">@ipl</a></p>
+            <div class="aff-link2">
+              <a href="http://www.hipein.com/static/hipein.apk" download><button class="btn btn-primary affilated-link_amazon">Download Now</button></a>
+            </div>
+          </div>
+          <p><b>Download size: </b>1.12 MB</p>
+          <p><b>OS:</b> Android</p>
+          <p><b>hipein app download soon and looking for fast score updates.</b></p>
+          <div class="aff-link1">
+              <a href="http://www.hipein.com/static/hipein.apk" download><button class="btn btn-success affilated-link_amazon">Download Now</button></a>
+          </div>
+          <br>
+          <iframe src="https://widget.crictimes.org/" style="width:100%;min-height: 450px; border: 0;" scrolling="yes"></iframe>
+          <div class="comment">
+            <div class="fb-comments" data-href="https://www.hipein.com/apps/hipein-app" data-order-by="social" data-numposts="100" data-width="100%" style="display:block;"></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  {% endblock content%}
