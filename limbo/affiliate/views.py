@@ -87,7 +87,9 @@ def free_uc(request):
 
 def FAUG(request):
     return render(request, "blog/game/FAUG/FAUG.html")
-
+# ipl
+def cskvsrr(request):
+    return render(request, "blog/game/IPL/cssvsrr.html")
 # app
 def filmorago(request):
     return render(request, "blog/apps/filmorago/filmorago.html")
