@@ -41,6 +41,7 @@ urlpatterns = [
     path("game/how-to-get-free-uc", views.free_uc, name='freeuc'),
     path("game/faug-made-in-india", views.FAUG, name='faug'),
     path("game/csk-vs-rr", views.cskvsrr, name='cskvsrr'),
+    path("game/kkr-vs-mi", views.kkrvsmi, name='kkrvsmi'),
     # technology
     path("technology/upcoming-mobile-phone", views.upcoming_mobile, name='upcomingMobile'),
     path("technology/add-me-to-search", views.add_me_to_search, name='addmetosearch'),
