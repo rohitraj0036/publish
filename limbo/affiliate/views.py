@@ -95,6 +95,9 @@ def cskvsrr(request):
 def kkrvsmi(request):
     return render(request, "blog/game/IPL/kkrvsmi.html")
 
+def kxipvsrcb(request):
+    return render(request, "blog/game/IPL/kxipvsrcb.html")
+
 # app
 def filmorago(request):
     return render(request, "blog/apps/filmorago/filmorago.html")

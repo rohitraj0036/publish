@@ -42,6 +42,7 @@ urlpatterns = [
     path("game/faug-made-in-india", views.FAUG, name='faug'),
     path("game/csk-vs-rr", views.cskvsrr, name='cskvsrr'),
     path("game/kkr-vs-mi", views.kkrvsmi, name='kkrvsmi'),
+    path("game/kxip-vs-rcb", views.kxipvsrcb, name='kxipvsrcb'),
     # technology
     path("technology/upcoming-mobile-phone", views.upcoming_mobile, name='upcomingMobile'),
     path("technology/add-me-to-search", views.add_me_to_search, name='addmetosearch'),
