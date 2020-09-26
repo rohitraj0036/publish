@@ -100,6 +100,9 @@ def kxipvsrcb(request):
 
 def cskvsdc(request):
     return render(request, "blog/game/IPL/cskvsdc.html")
+
+def kkrvssrh(request):
+    return render(request, "blog/game/IPL/kkrvssrh.html")
 # app
 def filmorago(request):
     return render(request, "blog/apps/filmorago/filmorago.html")
