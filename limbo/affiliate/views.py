@@ -101,6 +101,9 @@ def kxipvsrcb(request):
 def cskvsdc(request):
     return render(request, "blog/game/IPL/cskvsdc.html")
 
+def rrvskxip(request):
+    return render(request, "blog/game/IPL/rrvskxip.html")
+
 def kkrvssrh(request):
     return render(request, "blog/game/IPL/kkrvssrh.html")
 # app
