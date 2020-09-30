@@ -109,6 +109,9 @@ def kkrvssrh(request):
 
 def srhvsdc(request):
     return render(request, "blog/game/IPL/srhvsdc.html")
+
+def rrvskkr(request):
+    return render(request, "blog/game/IPL/rrvskkr.html")
 # app
 def filmorago(request):
     return render(request, "blog/apps/filmorago/filmorago.html")

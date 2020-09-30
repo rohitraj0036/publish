@@ -47,6 +47,7 @@ urlpatterns = [
     path("game/kkr-vs-srh", views.kkrvssrh, name='kkrvssrh'),
     path("game/rr-vs-kxip", views.rrvskxip, name='rrvskxip'),
     path("game/srh-vs-dc", views.srhvsdc, name='srhvsdc'),
+    path("game/rr-vs-kkr", views.rrvskkr, name='rrvskkr'),
     # technology
     path("technology/upcoming-mobile-phone", views.upcoming_mobile, name='upcomingMobile'),
     path("technology/add-me-to-search", views.add_me_to_search, name='addmetosearch'),
