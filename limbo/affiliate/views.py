@@ -112,6 +112,9 @@ def srhvsdc(request):
 
 def rrvskkr(request):
     return render(request, "blog/game/IPL/rrvskkr.html")
+
+def kxipvsmi(request):
+    return render(request, "blog/game/IPL/kxipvsmi.html")
 # app
 def filmorago(request):
     return render(request, "blog/apps/filmorago/filmorago.html")
