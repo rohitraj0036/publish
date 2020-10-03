@@ -81,6 +81,7 @@ urlpatterns = [
     path("mobile/poco-m2-pro", views.poco_m2_pro, name='pocom2pro'),
     path("mobile/poco-x3", views.poco_x3, name='pocox3'),
     path("mobile/mi-10t-pro", views.mi_10t_pro, name='mi10tpro'),
+    path("mobile/mi-10t", views.mi_10t, name='mi10t'),
 
 
     # oneplus page links

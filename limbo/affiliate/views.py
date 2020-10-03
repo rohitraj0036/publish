@@ -184,6 +184,10 @@ def poco_x3(request):
 
 def mi_10t_pro(request):
     return  render(request, "mobile/mi/mi 10t pro/mi-10t-pro.html")
+
+def mi_10t(request):
+    return  render(request, "mobile/mi/mi 10t/mi-10t.html")
+
 # oneplus page
 def oneplus(request):
     return render(request, "mobile/oneplus/oneplus_page/OnePlus .html")
