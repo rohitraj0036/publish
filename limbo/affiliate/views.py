@@ -121,6 +121,9 @@ def cskvssrh(request):
 
 def dcvskkr(request):
     return render(request, "blog/game/IPL/dcvskkr.html")
+
+def mivssrh(request):
+    return render(request, "blog/game/IPL/mivssrh.html")
 # app
 def filmorago(request):
     return render(request, "blog/apps/filmorago/filmorago.html")
