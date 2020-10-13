@@ -299,6 +299,10 @@ def narzo_20(request):
 
 def realme_x7_pro(request):
     return render(request,"mobile/realme/realme x7 pro/realme-x7-pro.html")
+
+def realme_q2(request):
+    return render(request,"mobile/realme/realme q2/realme-q2.html")
+
 # samsung pages
 def samsung(request):
     return render(request, "mobile/samsung/samsung_page/samsung.html")
