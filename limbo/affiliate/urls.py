@@ -125,6 +125,7 @@ urlpatterns = [
     path("mobile/realme-narzo-20", views.narzo_20, name='narzo20'),
     path("mobile/realme-x7-pro", views.realme_x7_pro, name='realmex7pro'),
     path("mobile/realme-q2", views.realme_q2, name='realmeq2'),
+    path("mobile/realme-q2i", views.realme_q2i, name='realmeq2i'),
 
 
     #  samsung page
