@@ -29,7 +29,7 @@ urlpatterns = [
     path("mobile/Best-camera-mobile-under-15000-INR", views.camera_15k, name='camera15k'),
     path("mobile/Best-top-10-mobile", views.top_ten_mob, name='toptenmob'),
     path("mobile/top-10-Best-battery-backup-mobile", views.battery, name='battery'),
-    path("mobile/iphone-12", views.iphone_12_blog, name='iphone12blog'),
+    path("mobile/iphone-12-blog", views.iphone_12_blog, name='iphone12blog'),
     path("mobile/non-chinese-smartphone", views.non_chinese_mobile, name='NonChinese'),
 
     # programing
