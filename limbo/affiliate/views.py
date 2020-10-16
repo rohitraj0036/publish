@@ -404,10 +404,11 @@ def iphone_7(request):
     return render(request, "mobile/apple/7/7.html", context=price)
 
 def iphone_6s(request):
-    product_price = '16,999'
-    product_name = 'Apple iphone 6s'
-    price = {'product':product_price, 'product_name':product_name}
-    return render(request, "mobile/apple/6s/6s.html", context=price)
+    return render(request, "mobile/apple/6s/6s.html")
+
+def iphone_12(request):
+    return render(request, "mobile/apple/iphone 12/iphone-12.html")    
+
 
 # vivo page link
 def vivo(request):
