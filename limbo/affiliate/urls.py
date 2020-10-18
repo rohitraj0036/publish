@@ -157,6 +157,7 @@ urlpatterns = [
     path('mobile/iphone-6s', views.iphone_6s, name='iphone6s'),
     path("mobile/iphone-SE", views.iphone_se, name='iphoneSE'),
     path("mobile/iphone-12", views.iphone_12, name='iphone12'),
+    path("mobile/iphone-12-pro", views.iphone_12_pro, name='iphone12pro'),
 
 
     # vivo page links

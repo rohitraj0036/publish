@@ -356,60 +356,38 @@ def apple(request):
     return render(request, "mobile/apple/apple_page/apple_page.html")
 
 def _11_pro_max(request):
-    product_price = '16,999'
-    product_name = 'Apple iphone 11 pro max'
-    price = {'product':product_price, 'product_name':product_name}
-    return render(request, "mobile/apple/11 pro max/11 pro max.html", context=price)
+    return render(request, "mobile/apple/11 pro max/11 pro max.html")
 
 def iphone11(request):
-    product_price = '16,999'
-    product_name = 'Apple iphone 11'
-    price = {'product':product_price, 'product_name':product_name}
-    return render(request, "mobile/apple/11/11.html", context=price)
+    return render(request, "mobile/apple/11/11.html")
 
 def iphone_x(request):
-    product_price = '16,999'
-    product_name = 'Apple iphone X'
-    price = {'product':product_price, 'product_name':product_name}
-    return render(request, "mobile/apple/x/x.html", context=price)
+    return render(request, "mobile/apple/x/x.html")
 
 def iphone_xr(request):
-    product_price = '16,999'
-    product_name = 'Apple iphone XR'
-    price = {'product':product_price, 'product_name':product_name}
-    return render(request, "mobile/apple/xr/xr.html", context=price)
+    return render(request, "mobile/apple/xr/xr.html")
 
 def iphone_se(request):
-    product_price = '16,999'
-    product_name = 'Apple iphone SE'
-    price = {'product':product_price, 'product_name':product_name}
-    return render(request, "mobile/apple/se/SE.html", context=price)
+    return render(request, "mobile/apple/se/SE.html")
 
 def iphone_8(request):
-    product_price = '16,999'
-    product_name = 'Apple iphone 8'
-    price = {'product':product_price, 'product_name':product_name}
-    return render(request, "mobile/apple/8/8.html", context=price)
+    return render(request, "mobile/apple/8/8.html")
 
 def iphone_7plus(request):
-    product_price = '16,999'
-    product_name = 'Apple iphone 7 plus'
-    price = {'product':product_price, 'product_name':product_name}
-    return render(request, "mobile/apple/7 plus/7plus.html", context=price)
+    return render(request, "mobile/apple/7 plus/7plus.html")
 
 def iphone_7(request):
-    product_price = '16,999'
-    product_name = 'Apple iphone 7'
-    price = {'product':product_price, 'product_name':product_name}
-    return render(request, "mobile/apple/7/7.html", context=price)
+    return render(request, "mobile/apple/7/7.html")
 
 def iphone_6s(request):
     return render(request, "mobile/apple/6s/6s.html")
 
 def iphone_12(request):
-    return render(request, "mobile/apple/iphone 12/iphone-12.html")    
+    return render(request, "mobile/apple/iphone 12/iphone-12.html")
 
 
+def iphone_12_pro(request):
+    return render(request, "mobile/apple/12 pro/12-pro.html")
 # vivo page link
 def vivo(request):
     return  render(request, "mobile/vivo/vivo_page/vivo.html")
