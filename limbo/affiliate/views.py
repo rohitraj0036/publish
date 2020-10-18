@@ -385,6 +385,8 @@ def iphone_6s(request):
 def iphone_12(request):
     return render(request, "mobile/apple/iphone 12/iphone-12.html")
 
+def iphone_12_mini(request):
+    return render(request, "mobile/apple/12 mini/12-mini.html")
 
 def iphone_12_pro(request):
     return render(request, "mobile/apple/12 pro/12-pro.html")
