@@ -390,6 +390,9 @@ def iphone_12_mini(request):
 
 def iphone_12_pro(request):
     return render(request, "mobile/apple/12 pro/12-pro.html")
+
+def iphone_12_pro_max(request):
+    return render(request, "mobile/apple/12 pro max/12-pro-max.html")
 # vivo page link
 def vivo(request):
     return  render(request, "mobile/vivo/vivo_page/vivo.html")

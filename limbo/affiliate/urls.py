@@ -159,6 +159,7 @@ urlpatterns = [
     path("mobile/iphone-12", views.iphone_12, name='iphone12'),
     path("mobile/iphone-12-mini", views.iphone_12_mini, name='iphone12mini'),
     path("mobile/iphone-12-pro", views.iphone_12_pro, name='iphone12pro'),
+    path("mobile/iphone-12-pro-max", views.iphone_12_pro_max, name='iphone12promax'),
 
 
     # vivo page links
