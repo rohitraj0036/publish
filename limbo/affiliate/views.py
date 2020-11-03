@@ -81,6 +81,10 @@ def add_me_to_search(request):
 def smartwatch(request):
     return render(request, "blog/technology/smartwatch/smartwatch.html")
 
+# earphone
+def boult_curve(request):
+    return render(request, "blog/technology/earphone/boult-audio-probass.html")
+
 # game
 def free_uc(request):
     return render(request, "blog/game/free uc/free uc.html")
