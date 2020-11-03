@@ -83,7 +83,7 @@ def smartwatch(request):
 
 # earphone
 def boult_curve(request):
-    return render(request, "blog/technology/earphone/boult-audio-probass.html")
+    return render(request, "blog/technology/earphone/boult-audio-probass-curve.html")
 
 # game
 def free_uc(request):

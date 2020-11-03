@@ -31,7 +31,7 @@ urlpatterns = [
     path("mobile/top-10-Best-battery-backup-mobile", views.battery, name='battery'),
     path("mobile/iphone-12-blog", views.iphone_12_blog, name='iphone12blog'),
     path("mobile/non-chinese-smartphone", views.non_chinese_mobile, name='NonChinese'),
-    path("boult-audio-probass-curve", views.boult_curve, name='boultcurve'),
+    path("article/boult-audio-probass-curve", views.boult_curve, name='boultcurve'),
 
     # programing
     path("programing/top-10-Best-backend-framework", views.top_10_framework, name='toptenframework'),
