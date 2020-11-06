@@ -354,7 +354,7 @@ def a52(request):
     return render(request, "mobile/samsung/a52/a52.html")
 
 
-def a52(request):
+def m62(request):
     return render(request, "mobile/samsung/m62/m62.html")
 
 def a42(request):
