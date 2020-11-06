@@ -353,6 +353,10 @@ def s20_fe(request):
 def a52(request):
     return render(request, "mobile/samsung/a52/a52.html")
 
+
+def a52(request):
+    return render(request, "mobile/samsung/m62/m62.html")
+
 def a42(request):
     return render(request, "mobile/samsung/a42/a42.html")
 # apple page link
