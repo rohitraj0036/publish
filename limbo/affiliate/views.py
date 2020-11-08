@@ -353,7 +353,6 @@ def s20_fe(request):
 def a52(request):
     return render(request, "mobile/samsung/a52/a52.html")
 
-
 def m62(request):
     return render(request, "mobile/samsung/m62/m62.html")
 
@@ -448,13 +447,10 @@ def vivo_y50(request):
     return  render(request, "mobile/vivo/vivo y50/vivo y50.html", context=price)
 
 def vivo_z1pro(request):
-    product_price = '16,999'
-    product_name = 'Vivo Z1 pro'
-    price = {'product':product_price, 'product_name':product_name}
-    return  render(request, "mobile/vivo/vivo z1 pro/vivo z1 pro.html", context=price)
+    return  render(request, "mobile/vivo/vivo z1 pro/vivo z1 pro.html")
 
 def vivo_z1x(request):
-    product_price = '16,999'
-    product_name = 'Vivo Z1X'
-    price = {'product':product_price, 'product_name':product_name}
-    return  render(request, "mobile/vivo/vivo Z1X/vivo Z1X.html", context=price)
+    return  render(request, "mobile/vivo/vivo Z1X/vivo Z1X.html")
+
+def vivo_v20_se(request):
+    return  render(request, "mobile/vivo/v20 se/v20-se.html")
