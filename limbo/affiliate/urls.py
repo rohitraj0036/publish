@@ -176,6 +176,9 @@ urlpatterns = [
     path("mobile/vivo-Z1pro", views.vivo_z1pro, name='vivoZ1pro'),
     path("mobile/vivo-Z1x", views.vivo_z1x, name='vivoZ1X'),
     path("mobile/vivo-v20-se", views.vivo_v20_se, name='vivov20se'),
+
+    # other
+    path("mobile/micromax-in-1b", views.micromax_in_1b, name='in1b'),
     path(
        "OneSignalSDKWorker.js",
        TemplateView.as_view(
