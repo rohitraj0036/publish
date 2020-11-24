@@ -238,6 +238,8 @@ def oneplus_nord(request):
 def oneplus_8t(request):
     return render(request, "mobile/oneplus/oneplus 8t/oneplus-8t.html")
 
+def oneplus_9(request):
+    return render(request, "mobile/oneplus/oneplus 9/oneplus-9.html")
 
 
 # realme page link
@@ -405,46 +407,25 @@ def vivo(request):
     return  render(request, "mobile/vivo/vivo_page/vivo.html")
 
 def vivo_s1pro(request):
-    product_price = '16,999'
-    product_name = 'Vivo S1 pro'
-    price = {'product':product_price, 'product_name':product_name}
-    return  render(request, "mobile/vivo/vivo s1 pro/vivo s1pro.html", context=price)
+    return  render(request, "mobile/vivo/vivo s1 pro/vivo s1pro.html")
 
 def vivo_u10(request):
-    product_price = '16,999'
-    product_name = 'Vivo U10'
-    price = {'product':product_price, 'product_name':product_name}
-    return  render(request, "mobile/vivo/vivo u10/vivo u10.html", context=price)
+    return  render(request, "mobile/vivo/vivo u10/vivo u10.html")
 
 def vivo_u20(request):
-    product_price = '16,999'
-    product_name = 'Vivo U20'
-    price = {'product':product_price, 'product_name':product_name}
-    return  render(request, "mobile/vivo/vivo u20/vivo u20.html", context=price)
+    return  render(request, "mobile/vivo/vivo u20/vivo u20.html")
 
 def vivo_v19(request):
-    product_price = '16,999'
-    product_name = 'Vivo V19'
-    price = {'product':product_price, 'product_name':product_name}
-    return  render(request, "mobile/vivo/vivo v19/vivo v19.html", context=price)
+    return  render(request, "mobile/vivo/vivo v19/vivo v19.html")
 
 def vivo_v17(request):
-    product_price = '16,999'
-    product_name = 'Vivo V17'
-    price = {'product':product_price, 'product_name':product_name}
-    return  render(request, "mobile/vivo/vivo v17/vivo v17.html", context=price)
+    return  render(request, "mobile/vivo/vivo v17/vivo v17.html")
 
 def vivo_y15(request):
-    product_price = '16,999'
-    product_name = 'Vivo Y15'
-    price = {'product':product_price, 'product_name':product_name}
-    return  render(request, "mobile/vivo/vivo y15/vivo y15.html", context=price)
+    return  render(request, "mobile/vivo/vivo y15/vivo y15.html")
 
 def vivo_y50(request):
-    product_price = '16,999'
-    product_name = 'Vivo Y50'
-    price = {'product':product_price, 'product_name':product_name}
-    return  render(request, "mobile/vivo/vivo y50/vivo y50.html", context=price)
+    return  render(request, "mobile/vivo/vivo y50/vivo y50.html")
 
 def vivo_z1pro(request):
     return  render(request, "mobile/vivo/vivo z1 pro/vivo z1 pro.html")
