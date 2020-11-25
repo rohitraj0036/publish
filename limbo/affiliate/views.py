@@ -436,6 +436,8 @@ def vivo_z1x(request):
 def vivo_v20_se(request):
     return  render(request, "mobile/vivo/v20 se/v20-se.html")
 
+def vivo_v20_pro(request):
+    return  render(request, "mobile/vivo/vivo v20 pro/vivo-v20-pro.html")
 # other
 def micromax_in_1b(request):
     return  render(request, "mobile/other/micromax-in-1b.html")
