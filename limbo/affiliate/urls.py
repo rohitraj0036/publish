@@ -181,6 +181,7 @@ urlpatterns = [
 
     # other
     path("mobile/micromax-in-1b", views.micromax_in_1b, name='in1b'),
+    path("mobile/moto-g-5g", views.moto_g_5g, name='motog5g'),
     path(
        "OneSignalSDKWorker.js",
        TemplateView.as_view(

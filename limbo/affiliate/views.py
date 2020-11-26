@@ -441,3 +441,6 @@ def vivo_v20_pro(request):
 # other
 def micromax_in_1b(request):
     return  render(request, "mobile/other/micromax-in-1b.html")
+
+def moto_g_5g(request):
+    return  render(request, "mobile/other/moto-g-5g.html")
