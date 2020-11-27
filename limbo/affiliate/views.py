@@ -204,6 +204,9 @@ def mi_10t_pro(request):
 def mi_10t(request):
     return  render(request, "mobile/mi/mi 10t/mi-10t.html")
 
+def note_9_pro_5g(request):
+    return  render(request, "mobile/mi/note 9 pro 5g/note-9-pro-5g.html")
+
 # oneplus page
 def oneplus(request):
     return render(request, "mobile/oneplus/oneplus_page/OnePlus .html")
