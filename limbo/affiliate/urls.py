@@ -179,6 +179,7 @@ urlpatterns = [
     path("mobile/vivo-Z1x", views.vivo_z1x, name='vivoZ1X'),
     path("mobile/vivo-v20-se", views.vivo_v20_se, name='vivov20se'),
     path("mobile/vivo-v20-pro", views.vivo_v20_pro, name='vivov20pro'),
+    path("mobile/vivo-x60-pro", views.vivo_x60_pro, name='vivox60pro'),
 
     # other
     path("mobile/micromax-in-1b", views.micromax_in_1b, name='in1b'),
