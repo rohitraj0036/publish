@@ -444,6 +444,11 @@ def vivo_v20_pro(request):
 
 def vivo_x60_pro(request):
     return  render(request, "mobile/vivo/vivo x60/vivo-x60-pro.html")
+
+#news
+def realme_v15_news(request):
+    return  render(request, "mobile/realme/realme-v15/realme-v15-news.html")
+
 # other
 def micromax_in_1b(request):
     return  render(request, "mobile/other/micromax-in-1b.html")

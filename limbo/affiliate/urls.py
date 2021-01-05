@@ -181,6 +181,9 @@ urlpatterns = [
     path("mobile/vivo-v20-pro", views.vivo_v20_pro, name='vivov20pro'),
     path("mobile/vivo-x60-pro", views.vivo_x60_pro, name='vivox60pro'),
 
+    #news
+    path("news/realme-v15-news", views.realme_v15_news, name='realmev15news'),
+
     # other
     path("mobile/micromax-in-1b", views.micromax_in_1b, name='in1b'),
     path("mobile/moto-g-5g", views.moto_g_5g, name='motog5g'),
